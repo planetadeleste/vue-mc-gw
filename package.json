@@ -1,6 +1,6 @@
 {
   "name": "@planetadeleste/vue-mc-gw",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Models and Controllers for GestionWeb project",
   "main": "dist/index.js",
   "types": "src/index.d.ts",
