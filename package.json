@@ -6,9 +6,9 @@
   "types": "src/index.d.ts",
   "author": "Alvaro Canepa",
   "license": "MIT",
-  "private": true,
   "devDependencies": {
     "@bit/planetadeleste.shopaholic-mc.location": "^1.0.42",
+    "@bit/planetadeleste.shopaholic.types.api": "^0.0.10",
     "@types/lodash": "^4.14.168",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
@@ -19,7 +19,8 @@
     "lodash": "^4.17.21",
     "ts-loader": "^9.1.1",
     "typescript": "^4.2.4",
-    "vue-mc": "^0.6.0"
+    "vue-mc": "^0.6.0",
+    "vuex-module-decorators": "^1.0.1"
   },
   "scripts": {
     "generate": "node ./tools/generate.js",
@@ -27,7 +28,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@planetadeleste/vue-mc-shopaholic": "^1.0.76"
+    "@planetadeleste/vue-mc": "^1.0.77"
   },
   "repository": {
     "type": "git",
@@ -35,5 +36,13 @@
   },
   "bugs": {
     "url": "https://github.com/planetadeleste/vue-mc-gw/issues"
-  }
+  },
+  "homepage": "https://github.com/planetadeleste/vue-mc-gw#readme",
+  "keywords": [
+    "vuemc",
+    "vue",
+    "mc",
+    "gestionweb",
+    "gw"
+  ]
 }

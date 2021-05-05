@@ -28,6 +28,13 @@
   resolved "https://node.bit.dev/planetadeleste.shopaholic-mc.location/-/planetadeleste.shopaholic-mc.location-1.0.44.tgz#594bcf165db6c09e6b9a1f8afd68ec62dc317b27"
   integrity sha1-WUvPFl22wJ5rmh+K/WjsYtwxeyc=
 
+"@bit/planetadeleste.shopaholic.types.api@^0.0.10":
+  version "0.0.10"
+  resolved "https://node.bit.dev/planetadeleste.shopaholic.types.api/-/planetadeleste.shopaholic.types.api-0.0.10.tgz#46a7e7921e465c82e70a82bf411cab60e7dd95f2"
+  integrity sha1-Rqfnkh5GXILnCoK/QRyrYOfdlfI=
+  dependencies:
+    axios "^0.21.0"
+
 "@eslint/eslintrc@^0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.4.0.tgz#99cc0a0584d72f1df38b900fb062ba995f395547"
@@ -64,10 +71,10 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
-"@planetadeleste/vue-mc-shopaholic@^1.0.76":
-  version "1.0.76"
-  resolved "https://registry.yarnpkg.com/@planetadeleste/vue-mc-shopaholic/-/vue-mc-shopaholic-1.0.76.tgz#938129c446e03905d1ee4bd3dbc51f6aa7e39daa"
-  integrity sha512-ELmNcJjJLyEg+dTJ2RnSEUsosfEY7BV/4Veabus+YvyN4CANDGRYEbVEwm6N0eLZ5+PBA4LjwTxcrxlSNzpGZA==
+"@planetadeleste/vue-mc@^1.0.77":
+  version "1.0.81"
+  resolved "https://registry.yarnpkg.com/@planetadeleste/vue-mc/-/vue-mc-1.0.81.tgz#7836489bb6fbd8a1bb14d514f28145d932286a83"
+  integrity sha512-tG4JdWftShlKgSlGgQnZylhYNfHwV3oOb+NG9XmpFcTuBOIiY/l1nLPzwcqA8b89w+o2nDUeb7Wy2Jg4QjXI+g==
   dependencies:
     axios "^0.21.1"
     object-to-formdata "^4.1.0"
@@ -264,7 +271,7 @@ axios@0.19.0:
     follow-redirects "1.5.10"
     is-buffer "^2.0.2"
 
-axios@^0.21.1:
+axios@^0.21.0, axios@^0.21.1:
   version "0.21.1"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
   integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
@@ -1433,6 +1440,11 @@ vue@^2.5.17:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
   integrity sha512-uhmLFETqPPNyuLLbsKz6ioJ4q7AZHzD8ZVFNATNyICSZouqP2Sz0rotWQC8UNBF6VGSCs5abnKJoStA6JbCbfg==
+
+vuex-module-decorators@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vuex-module-decorators/-/vuex-module-decorators-1.0.1.tgz#d34dafb5428a3636f1c26d3d014c15fc9659ccd0"
+  integrity sha512-FLWZsXV5XAtl/bcKUyQFpnSBtpc3wK/7zSdy9oKbyp71mZd4ut5y2zSd219wWW9OG7WUOlVwac4rXFFDVnq7ug==
 
 which-module@^2.0.0:
   version "2.0.0"

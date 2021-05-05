@@ -1,4 +1,4 @@
-import { Model } from "@planetadeleste/vue-mc-shopaholic";
+import { Model } from "@planetadeleste/vue-mc";
 export default class Settings extends Model {
     defaults() {
         return {

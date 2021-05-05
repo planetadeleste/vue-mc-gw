@@ -1,4 +1,4 @@
-import { Collection } from "@planetadeleste/vue-mc-shopaholic";
+import { Collection } from "@planetadeleste/vue-mc";
 import Company from "../models/Company";
 export default class Companies extends Collection {
     model() {

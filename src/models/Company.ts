@@ -1,4 +1,4 @@
-import { Model } from "@planetadeleste/vue-mc-shopaholic";
+import { Model } from "@planetadeleste/vue-mc";
 import { toNumber } from "lodash";
 
 export default class Company extends Model {
