@@ -1,6 +1,6 @@
 {
   "name": "@planetadeleste/vue-mc-gw",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Models and Controllers for GestionWeb project",
   "main": "dist/vue-mc-gw.js",
   "module": "dist/vue-mc-gw.es.js",
@@ -49,6 +49,11 @@
     "url": "https://github.com/planetadeleste/vue-mc-gw/issues"
   },
   "homepage": "https://github.com/planetadeleste/vue-mc-gw#readme",
+  "files": [
+    "dist",
+    "src/types",
+    "src/index.d.ts"
+  ],
   "keywords": [
     "vuemc",
     "vue",
