@@ -1,7 +1,7 @@
 import { Model } from "@planetadeleste/vue-mc";
 import { toNumber } from "lodash";
 
-export default class __model__ extends Model {
+export default class Branch extends Model {
   defaults(): Record<string, any> {
     return {
       id: null,
@@ -21,10 +21,10 @@ export default class __model__ extends Model {
 
   routes(): Record<string, any> {
     return {
-      fetch: "__route__(noCase).show",
-      create: "__route__(noCase).store",
-      update: "__route__(noCase).update",
-      delete: "__route__(noCase).destroy",
+      fetch: "branches.show",
+      create: "branches.store",
+      update: "branches.update",
+      delete: "branches.destroy",
     };
   }
 }

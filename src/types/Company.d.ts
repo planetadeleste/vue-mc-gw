@@ -2,7 +2,8 @@ import {
   CountryData,
   StateData,
   TownData,
-} from "@bit/planetadeleste.shopaholic-mc.location";
+} from "@planetadeleste/vue-mc-location";
+import { BranchData } from "./Branch";
 
 export interface CompanyData {
   id: number;
@@ -26,4 +27,5 @@ export interface CompanyData {
   town_id: number;
   town_slug: string;
   town: TownData;
+  branches: BranchData[];
 }

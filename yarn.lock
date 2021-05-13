@@ -888,18 +888,6 @@
     "@babel/helper-validator-identifier" "^7.14.0"
     to-fast-properties "^2.0.0"
 
-"@bit/planetadeleste.shopaholic-mc.location@^1.0.42":
-  version "1.0.44"
-  resolved "https://node.bit.dev/planetadeleste.shopaholic-mc.location/-/planetadeleste.shopaholic-mc.location-1.0.44.tgz#594bcf165db6c09e6b9a1f8afd68ec62dc317b27"
-  integrity sha1-WUvPFl22wJ5rmh+K/WjsYtwxeyc=
-
-"@bit/planetadeleste.shopaholic.types.api@^0.0.10":
-  version "0.0.10"
-  resolved "https://node.bit.dev/planetadeleste.shopaholic.types.api/-/planetadeleste.shopaholic.types.api-0.0.10.tgz#46a7e7921e465c82e70a82bf411cab60e7dd95f2"
-  integrity sha1-Rqfnkh5GXILnCoK/QRyrYOfdlfI=
-  dependencies:
-    axios "^0.21.0"
-
 "@eslint/eslintrc@^0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.4.0.tgz#99cc0a0584d72f1df38b900fb062ba995f395547"
@@ -936,10 +924,17 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
+"@planetadeleste/vue-mc-location@^1.0.50":
+  version "1.0.50"
+  resolved "https://registry.yarnpkg.com/@planetadeleste/vue-mc-location/-/vue-mc-location-1.0.50.tgz#7127967086631f8bde7b06c0917321d6c4de0543"
+  integrity sha512-MF5FlOh3wiXQr1TyIQ3N0cuQbbgXnfDdd9zJDvQRO27yNOkKmlKsG8S5JfoM/UivIxGZaqCst+Xgs9BIcDhaqg==
+  dependencies:
+    "@planetadeleste/vue-mc" "^1.0.77"
+
 "@planetadeleste/vue-mc@^1.0.77":
-  version "1.0.85"
-  resolved "https://registry.yarnpkg.com/@planetadeleste/vue-mc/-/vue-mc-1.0.85.tgz#e8dfce3cfc71abf507f62686d80df7a6db72acec"
-  integrity sha512-K2na8+DFvYcOvvBqMYac2EPid1/la6Xocs+iFfLdwOAz55X/1Fqei28L6zTvNtlHXq8CykgGRZxMqdii04uP1g==
+  version "1.0.87"
+  resolved "https://registry.yarnpkg.com/@planetadeleste/vue-mc/-/vue-mc-1.0.87.tgz#5009a975103909abf528846f6d439c9a2a708e9a"
+  integrity sha512-5x/etqH512yg4FS667p8EhXiMvjs1MLb0HT5N6wzJWICiM6M+sYFJni6r9khyY45bD6aY+QHkIH9nKR3jt578A==
   dependencies:
     object-to-formdata "^4.1.0"
 
@@ -1212,13 +1207,6 @@ axios@0.19.0:
   dependencies:
     follow-redirects "1.5.10"
     is-buffer "^2.0.2"
-
-axios@^0.21.0:
-  version "0.21.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
-  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
-  dependencies:
-    follow-redirects "^1.10.0"
 
 babel-plugin-dynamic-import-node@^2.3.3:
   version "2.3.3"
@@ -1739,11 +1727,6 @@ follow-redirects@1.5.10:
   integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
   dependencies:
     debug "=3.1.0"
-
-follow-redirects@^1.10.0:
-  version "1.14.1"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.1.tgz#d9114ded0a1cfdd334e164e6662ad02bfd91ff43"
-  integrity sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==
 
 fs.realpath@^1.0.0:
   version "1.0.0"

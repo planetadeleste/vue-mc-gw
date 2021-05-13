@@ -53,7 +53,7 @@ const writeImportExport = (sPath, sPlugin) => {
     plugin: sPlugin
   });
 
-  writeFile(`src/${sPath}/index.ts`, sValue, err => {
+  writeFile(`src/index.ts`, sValue, err => {
     // throws an error, you could also catch it here
     if (err) throw err;
 

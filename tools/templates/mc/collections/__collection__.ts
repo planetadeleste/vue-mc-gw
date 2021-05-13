@@ -1,4 +1,4 @@
-import { Collection } from "@bit/planetadeleste.shopaholic-mc.base";
+import { Collection } from "@planetadeleste/vue-mc";
 import __model__ from "../models/__model__";
 
 export default class __collection__ extends Collection<__model__> {

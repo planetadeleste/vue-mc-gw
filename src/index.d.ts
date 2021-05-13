@@ -1,16 +1,23 @@
 import "@planetadeleste/vue-mc";
-import { CompanyData, SettingsData } from "./types";
+import { BranchData, CompanyData, SettingsData } from "./types";
 
 declare module "@planetadeleste/vue-mc-gw" {
   import { Model, Collection } from "@planetadeleste/vue-mc";
-  export { CompanyData, SettingsData };
 
   interface Company extends Model, CompanyData {}
   class Company extends Model {}
 
+  interface Branch extends Model, BranchData {}
+  class Branch extends Model {}
+
   interface Settings extends Model, SettingsData {}
   class Settings extends Model {}
 
-  export { Company, Settings };
+  export { CompanyData, Company, BranchData, Branch, SettingsData, Settings };
   export class Companies extends Collection<Company> {}
+  export class Branches extends Collection<Branch> {
+    byCompany<T extends Branches>(this: T, iCompanyID: number): T;
+    byActive<T extends Branches>(this: T): T;
+    byDefault<T extends Branches>(this: T): T;
+  }
 }

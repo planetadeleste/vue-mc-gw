@@ -1,16 +1,18 @@
 /**
- * Models and Collections for Gw plugin
+ * Models and Collections for PlanetaDelEste.Gw plugin
  *
  * @author Alvaro Canepa <bfpdevel@gmail.com>
  */
 
 // COLLECTIONS
+import Branches from "./collections/Branches";
 import Companies from "./collections/Companies";
 
-export { Companies };
+export { Branches, Companies };
 
 // MODELS
+import Branch from "./models/Branch";
 import Company from "./models/Company";
 import Settings from "./models/Settings";
 
-export { Company, Settings };
+export { Branch, Company, Settings };
