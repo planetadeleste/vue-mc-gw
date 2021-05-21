@@ -16,4 +16,7 @@ export interface BranchData {
   company: CompanyData;
   created_at: string;
   updated_at: string;
+  ucfe_code: string;
+  ucfe_terminal: string;
+  ucfe_password: string;
 }

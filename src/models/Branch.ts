@@ -16,6 +16,9 @@ export default class Branch extends Model {
       address: null,
       phone: null,
       email: null,
+      ucfe_code: null,
+      ucfe_terminal: null,
+      ucfe_password: null,
     };
   }
 
