@@ -54,12 +54,29 @@ const writeImportExport = (sPath, sPlugin) => {
   });
 
   writeFile(`src/index.ts`, sValue, err => {
-    // throws an error, you could also catch it here
     if (err) throw err;
 
-    // success case, the file was saved
-    console.log("index.ts saved!");
+    console.info("index.ts saved!");
   });
 };
 
+const writeTypesIndex = () => {
+  const tree = dirTree("src/types");
+  const arFiles = chain(tree.children)
+    .filter(item => item.name != "index.d.ts")
+    .map(item => {
+      const sName = item.name.replace(".d.ts", "");
+      return `export * from "./${sName}";`;
+    })
+    .join("\n")
+    .value();
+  
+  writeFile("src/types/index.d.ts", arFiles, err => {
+    if (err) throw err;
+
+    console.info("index.d.ts saved!");
+  });
+}
+
 exports.writeImportExport = writeImportExport;
+exports.writeTypesIndex = writeTypesIndex;

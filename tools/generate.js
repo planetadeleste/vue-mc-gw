@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 const { get, find, camelCase, startCase, kebabCase } = require("lodash");
 const { generateTemplateFiles } = require("generate-template-files");
-const { writeImportExport } = require("./writeIndex");
+const { writeImportExport, writeTypesIndex } = require("./writeIndex");
 
 generateTemplateFiles([
   // Generate Model
@@ -24,7 +24,9 @@ generateTemplateFiles([
       const sPluginValue = get(obPlugin, "slotValue");
       const sPlugin = startCase(camelCase(sPluginValue)).replace(/ /g, "");
       const sPath = kebabCase(sPluginValue);
+      
       writeImportExport(sPath, sPlugin);
+      writeTypesIndex();
     }
   }
 ]);

@@ -1,5 +1,6 @@
 import { Model } from "@planetadeleste/vue-mc";
 import { toNumber } from "lodash";
+import { required } from "vue-mc/validation";
 
 export default class Branch extends Model {
   defaults(): Record<string, any> {
@@ -33,7 +34,9 @@ export default class Branch extends Model {
   }
 
   validation(): Record<string, any> {
-    return {};
+    return {
+      company: required
+    };
   }
 
   routes(): Record<string, any> {
