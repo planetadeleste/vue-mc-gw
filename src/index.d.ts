@@ -37,5 +37,5 @@ declare module "@planetadeleste/vue-mc-gw" {
     byActive<T extends Branches>(this: T): T;
     byDefault<T extends Branches>(this: T): T;
   }
-  export class currencyrates extends Collection<CurrencyRate> {}
+  export class CurrencyRates extends Collection<CurrencyRate> {}
 }
