@@ -34,6 +34,7 @@ declare module "@planetadeleste/vue-mc-gw" {
     Settings,
     CurrencyRate,
     CurrencyRateData,
+    PaymentTerm,
   };
   export class Companies extends Collection<Company> {}
   export class Branches extends Collection<Branch> {
