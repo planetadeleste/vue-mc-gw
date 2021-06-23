@@ -5,6 +5,7 @@ import {
   SettingsData,
   CurrencyRateData,
   PaymentTermData,
+  PaymentTermType,
 } from "./types";
 
 declare module "@planetadeleste/vue-mc-gw" {
@@ -35,6 +36,7 @@ declare module "@planetadeleste/vue-mc-gw" {
     CurrencyRate,
     CurrencyRateData,
     PaymentTerm,
+    PaymentTermType,
   };
   export class Companies extends Collection<Company> {}
   export class Branches extends Collection<Branch> {
