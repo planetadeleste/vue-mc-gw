@@ -6,12 +6,14 @@ export default class PaymentTerm extends Model {
     return {
       id: null,
       active: false,
+      cash: false,
       name: null,
       code: null,
       type: null,
       frequency: null,
       frequency_interval: 0,
       cycles: 0,
+      delay: 0,
       description: null,
     };
   }
