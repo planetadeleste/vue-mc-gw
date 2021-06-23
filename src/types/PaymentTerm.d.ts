@@ -1,4 +1,5 @@
 export type PaymentTermType = "fixed" | "infinite";
+export type PaymentTermFrequency = "week" | "day" | "year" | "month";
 
 export interface PaymentTermData {
   id: number;
@@ -6,7 +7,7 @@ export interface PaymentTermData {
   name: string;
   code: string;
   type: PaymentTermType;
-  frequency: string;
+  frequency: PaymentTermFrequency;
   frequency_interval: number;
   cycles: number;
   description: string;
