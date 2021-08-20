@@ -1,13 +1,11 @@
 import { Model } from "@planetadeleste/vue-mc";
 import { toNumber } from "lodash";
 
-export default class Company extends Model {
+export default class Firm extends Model {
   defaults(): Record<string, any> {
     return {
       id: null,
-      active: true,
-      preview_image: null,
-      firm: {}
+      name: null,
     };
   }
 
@@ -23,10 +21,10 @@ export default class Company extends Model {
 
   routes(): Record<string, any> {
     return {
-      fetch: "companies.show",
-      create: "companies.store",
-      update: "companies.update",
-      delete: "companies.destroy",
+      fetch: "firms.show",
+      create: "firms.store",
+      update: "firms.update",
+      delete: "firms.destroy",
     };
   }
 }
