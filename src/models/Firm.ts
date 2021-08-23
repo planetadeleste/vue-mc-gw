@@ -6,6 +6,27 @@ export default class Firm extends Model {
     return {
       id: null,
       name: null,
+      slug: null,
+      code: null,
+      description: null,
+      doc_id: null,
+      doc_type: null,
+
+      address: null,
+      email: null,
+      phone: null,
+      mobile: null,
+
+      // Location data
+      country_id: null,
+      state_id: null,
+      town_id: null,
+
+      // DGI Data
+      dgi_local_sec_nro: null,
+      dgi_dir_fiscal: null,
+      dgi_loc_nom: null,
+      dgi_dpto_nom: null,
     };
   }
 

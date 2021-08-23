@@ -11,8 +11,12 @@ export interface FirmData {
   description: string;
   doc_id: string;
   doc_type: string;
+
   address: string;
-  
+  email: string;
+  phone: string;
+  mobile: string;
+
   // Location data
   country_id: number;
   country_code: string;
