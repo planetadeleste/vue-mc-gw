@@ -1,0 +1,23 @@
+import { FirmData } from "./Firm";
+import { CompanyData } from "./Company";
+
+/**
+ * 1 - Customer only
+ * 2 - Provider only
+ * 3 - Both (Customer and Provider)
+ */
+export type CustomerType = 1 | 2 | 3;
+
+export interface CustomerData {
+  id: number;
+  company_id: number;
+  type: CustomerType;
+  active: boolean;
+  is_customer: boolean;
+  is_provider: boolean;
+  created_at: string;
+  updated_at: string;
+  preview_image: string;
+  firm: FirmData;
+  company: CompanyData;
+}

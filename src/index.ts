@@ -5,20 +5,29 @@
  */
 
 // COLLECTIONS
-import Branches from "./collections/Branches";
-import Companies from "./collections/Companies";
+import BranchCollection from "./collections/BranchCollection";
+import CompanyCollection from "./collections/CompanyCollection";
 import CurrencyRates from "./collections/CurrencyRates";
+import CustomerCollection from "./collections/CustomerCollection";
 import FirmCollection from "./collections/FirmCollection";
 import PaymentTerms from "./collections/PaymentTerms";
 
-export { Branches, Companies, CurrencyRates, FirmCollection, PaymentTerms };
+export {
+  BranchCollection,
+  CompanyCollection,
+  CurrencyRates,
+  CustomerCollection,
+  FirmCollection,
+  PaymentTerms,
+};
 
 // MODELS
 import Branch from "./models/Branch";
 import Company from "./models/Company";
 import CurrencyRate from "./models/CurrencyRate";
+import Customer from "./models/Customer";
 import Firm from "./models/Firm";
 import PaymentTerm from "./models/PaymentTerm";
 import Settings from "./models/Settings";
 
-export { Branch, Company, CurrencyRate, Firm, PaymentTerm, Settings };
+export { Branch, Company, CurrencyRate, Customer, Firm, PaymentTerm, Settings };
