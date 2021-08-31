@@ -33,4 +33,6 @@ export interface FirmData {
   dgi_dir_fiscal: string;
   dgi_loc_nom: string;
   dgi_dpto_nom: string;
+  dgi_denominacion: string;
+  dgi_nombre_fantasia: string;
 }

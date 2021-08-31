@@ -27,6 +27,8 @@ export default class Firm extends Model {
       dgi_dir_fiscal: null,
       dgi_loc_nom: null,
       dgi_dpto_nom: null,
+      dgi_denominacion: null,
+      dgi_nombre_fantasia: null,
     };
   }
 
