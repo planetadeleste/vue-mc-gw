@@ -16,10 +16,12 @@ import {
 
 declare module "@planetadeleste/vue-mc-gw" {
   import { Model, Collection } from "@planetadeleste/vue-mc";
+  import { Response } from "vue-mc";
 
   interface Branch extends Model, BranchData {}
   class Branch extends Model {}
   class BranchCollection extends Collection<Branch> {
+    list(): Promise<Response<BranchData[]>>;
     byCompany<T extends BranchCollection>(this: T, iCompanyID: number): T;
     byActive<T extends BranchCollection>(this: T): T;
     byDefault<T extends BranchCollection>(this: T): T;
@@ -50,7 +52,9 @@ declare module "@planetadeleste/vue-mc-gw" {
 
   interface PaymentTerm extends Model, PaymentTermData {}
   class PaymentTerm extends Model {}
-  class PaymentTerms extends Collection<PaymentTerm> {}
+  class PaymentTerms extends Collection<PaymentTerm> {
+    list(): Promise<Response<PaymentTermData[]>>;
+  }
 
   interface Settings extends Model, SettingsData {}
   class Settings extends Model {}
@@ -61,11 +65,15 @@ declare module "@planetadeleste/vue-mc-gw" {
 
   interface Account extends Model, AccountData {}
   class Account extends Model {}
-  class AccountCollection extends Collection<Account> {}
+  class AccountCollection extends Collection<Account> {
+    list(): Promise<Response<AccountData[]>>;
+  }
 
   interface AccountType extends Model, AccountTypeData {}
   class AccountType extends Model {}
-  class AccountTypeCollection extends Collection<AccountType> {}
+  class AccountTypeCollection extends Collection<AccountType> {
+    list(): Promise<Response<AccountTypeData[]>>;
+  }
 
   export {
     Account,

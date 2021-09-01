@@ -1,4 +1,6 @@
 import { Collection } from "@planetadeleste/vue-mc";
+import { BranchData } from "@/types";
+import { Response } from "vue-mc";
 import Branch from "../models/Branch";
 
 export default class BranchCollection extends Collection<Branch> {
@@ -9,7 +11,12 @@ export default class BranchCollection extends Collection<Branch> {
   routes(): Record<string, any> {
     return {
       fetch: "branches.index",
+      list: "branches.list",
     };
+  }
+
+  async list(): Promise<Response<BranchData[]>> {
+    return await this.createCustomRequest("list");
   }
 
   byCompany<T extends BranchCollection>(this: T, iCompanyID: number): T {
