@@ -1,5 +1,6 @@
 import "@planetadeleste/vue-mc";
 import {
+  AccountTypeData,
   BranchData,
   CompanyData,
   CurrencyRateData,
@@ -57,12 +58,19 @@ declare module "@planetadeleste/vue-mc-gw" {
   class Firm extends Model {}
   class FirmCollection extends Collection<Firm> {}
 
+  interface AccountType extends Model, AccountTypeData {}
+  class AccountType extends Model {}
+  class AccountTypeCollection extends Collection<AccountType> {}
+
   export {
+    AccountType,
+    AccountTypeCollection,
+    AccountTypeData,
     Branch,
-    BranchData,
     BranchCollection,
-    CompanyCollection,
+    BranchData,
     Company,
+    CompanyCollection,
     CompanyData,
     CurrencyRate,
     CurrencyRateData,

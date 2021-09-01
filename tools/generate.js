@@ -11,7 +11,7 @@ generateTemplateFiles([
     entry: {
       folderPath: "./tools/templates/mc/"
     },
-    stringReplacers: ["__model__", "__collection__", "__plugin__", "__route__"],
+    stringReplacers: ["__model__", "__plugin__", "__route__"],
     output: {
       path: "./src",
       pathAndFileNameDefaultCase: "(pascalCase)",

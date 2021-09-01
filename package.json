@@ -1,6 +1,6 @@
 {
   "name": "@planetadeleste/vue-mc-gw",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Models and Controllers for GestionWeb project",
   "main": "dist/vue-mc-gw.js",
   "module": "dist/vue-mc-gw.es.js",

@@ -1,3 +1,4 @@
+export * from "./AccountType";
 export * from "./Branch";
 export * from "./Company";
 export * from "./CurrencyRate";
