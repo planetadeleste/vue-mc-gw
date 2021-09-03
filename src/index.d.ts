@@ -11,6 +11,7 @@ import {
   PaymentTermData,
   PaymentTermFrequency,
   PaymentTermType,
+  PaymentMethodData,
   SettingsData,
 } from "./types";
 
@@ -75,6 +76,12 @@ declare module "@planetadeleste/vue-mc-gw" {
     list(): Promise<Response<AccountTypeData[]>>;
   }
 
+  interface PaymentMethod extends Model, PaymentMethodData {}
+  class PaymentMethod extends Model {}
+  class PaymentMethodCollection extends Collection<PaymentMethod> {
+    list(): Promise<Response<PaymentMethodData[]>>;
+  }
+
   export {
     Account,
     AccountCollection,
@@ -98,6 +105,9 @@ declare module "@planetadeleste/vue-mc-gw" {
     Firm,
     FirmCollection,
     FirmData,
+    PaymentMethod,
+    PaymentMethodCollection,
+    PaymentMethodData,
     PaymentTerm,
     PaymentTermFrequency,
     PaymentTerms,
