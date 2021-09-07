@@ -1,4 +1,5 @@
 export * from "./Account";
+export * from "./AccountConfig";
 export * from "./AccountType";
 export * from "./Branch";
 export * from "./Company";

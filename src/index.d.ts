@@ -1,6 +1,7 @@
 import "@planetadeleste/vue-mc";
 import {
   AccountData,
+  AccountConfigData,
   AccountTypeData,
   BranchData,
   CompanyData,
@@ -82,9 +83,18 @@ declare module "@planetadeleste/vue-mc-gw" {
     list(): Promise<Response<PaymentMethodData[]>>;
   }
 
+  interface AccountConfig extends Model, AccountConfigData {}
+  class AccountConfig extends Model {}
+  class AccountConfigCollection extends Collection<AccountConfig> {
+    list(): Promise<Response<AccountConfigData[]>>;
+  }
+
   export {
     Account,
     AccountCollection,
+    AccountConfig,
+    AccountConfigCollection,
+    AccountConfigData,
     AccountData,
     AccountType,
     AccountTypeCollection,

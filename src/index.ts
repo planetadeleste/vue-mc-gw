@@ -1,11 +1,12 @@
 /**
- * Models and Collections for VueMcGw plugin
+ * Models and Collections for PlanetaDelEsteGw plugin
  *
  * @author Alvaro Canepa <bfpdevel@gmail.com>
  */
 
 // COLLECTIONS
 import AccountCollection from "./collections/AccountCollection";
+import AccountConfigCollection from "./collections/AccountConfigCollection";
 import AccountTypeCollection from "./collections/AccountTypeCollection";
 import BranchCollection from "./collections/BranchCollection";
 import CompanyCollection from "./collections/CompanyCollection";
@@ -17,6 +18,7 @@ import PaymentTerms from "./collections/PaymentTerms";
 
 export {
   AccountCollection,
+  AccountConfigCollection,
   AccountTypeCollection,
   BranchCollection,
   CompanyCollection,
@@ -29,6 +31,7 @@ export {
 
 // MODELS
 import Account from "./models/Account";
+import AccountConfig from "./models/AccountConfig";
 import AccountType from "./models/AccountType";
 import Branch from "./models/Branch";
 import Company from "./models/Company";
@@ -41,6 +44,7 @@ import Settings from "./models/Settings";
 
 export {
   Account,
+  AccountConfig,
   AccountType,
   Branch,
   Company,
