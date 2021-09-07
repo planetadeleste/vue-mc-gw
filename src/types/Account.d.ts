@@ -1,10 +1,10 @@
 import { CurrencyData } from "@planetadeleste/vue-mc-shopaholic";
-import { AccountTypeData } from "./AccountType";
 import { CompanyData } from "./Company";
+import { PaymentMethodData } from "./PaymentMethod";
 
 export interface AccountData {
   id: number;
-  accounttype_id: number;
+  paymentmethod_id: number;
   currency_id: number;
   company_id: number;
   active: boolean;
@@ -13,6 +13,6 @@ export interface AccountData {
   created_at: string;
   updated_at: string;
   company?: CompanyData;
-  accounttype?: AccountTypeData;
+  paymentmethod?: PaymentMethodData;
   currency?: CurrencyData;
 }
