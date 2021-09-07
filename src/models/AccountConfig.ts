@@ -5,6 +5,7 @@ export default class AccountConfig extends Model {
   defaults(): Record<string, any> {
     return {
       id: null,
+      any_currency: false,
       company_id: null,
       account_id: null,
       accounttype_id: null,
