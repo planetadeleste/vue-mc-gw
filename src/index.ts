@@ -1,5 +1,5 @@
 /**
- * Models and Collections for PlanetaDelEsteGw plugin
+ * Models and Collections for VueMcGw plugin
  *
  * @author Alvaro Canepa <bfpdevel@gmail.com>
  */
@@ -15,6 +15,7 @@ import CustomerCollection from "./collections/CustomerCollection";
 import FirmCollection from "./collections/FirmCollection";
 import PaymentMethodCollection from "./collections/PaymentMethodCollection";
 import PaymentTerms from "./collections/PaymentTerms";
+import ProductGwCollection from "./collections/ProductGwCollection";
 import TaxTypeCollection from "./collections/TaxTypeCollection";
 
 export {
@@ -28,6 +29,7 @@ export {
   FirmCollection,
   PaymentMethodCollection,
   PaymentTerms,
+  ProductGwCollection,
   TaxTypeCollection,
 };
 
@@ -42,6 +44,7 @@ import Customer from "./models/Customer";
 import Firm from "./models/Firm";
 import PaymentMethod from "./models/PaymentMethod";
 import PaymentTerm from "./models/PaymentTerm";
+import ProductGw from "./models/ProductGw";
 import Settings from "./models/Settings";
 import TaxType from "./models/TaxType";
 
@@ -56,6 +59,7 @@ export {
   Firm,
   PaymentMethod,
   PaymentTerm,
+  ProductGw,
   Settings,
   TaxType,
 };

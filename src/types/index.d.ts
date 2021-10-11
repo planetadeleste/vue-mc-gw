@@ -8,5 +8,6 @@ export * from "./Customer";
 export * from "./Firm";
 export * from "./PaymentMethod";
 export * from "./PaymentTerm";
+export * from "./ProductGw";
 export * from "./Settings";
 export * from "./TaxType";

@@ -15,6 +15,7 @@ import {
   PaymentMethodData,
   SettingsData,
   TaxTypeData,
+  ProductGwData,
 } from "./types";
 
 declare module "@planetadeleste/vue-mc-gw" {
@@ -96,6 +97,12 @@ declare module "@planetadeleste/vue-mc-gw" {
     list(): Promise<Response<TaxTypeData[]>>;
   }
 
+  interface ProductGw extends Model, ProductGwData {}
+  class ProductGw extends Model {}
+  class ProductGwCollection extends Collection<ProductGw> {
+    list(): Promise<Response<ProductGwData[]>>;
+  }
+
   export {
     Account,
     AccountCollection,
@@ -129,6 +136,9 @@ declare module "@planetadeleste/vue-mc-gw" {
     PaymentTermFrequency,
     PaymentTerms,
     PaymentTermType,
+    ProductGw,
+    ProductGwCollection,
+    ProductGwData,
     Settings,
     SettingsData,
     TaxType,
