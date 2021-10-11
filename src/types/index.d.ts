@@ -9,3 +9,4 @@ export * from "./Firm";
 export * from "./PaymentMethod";
 export * from "./PaymentTerm";
 export * from "./Settings";
+export * from "./TaxType";

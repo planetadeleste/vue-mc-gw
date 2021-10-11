@@ -15,6 +15,7 @@ import CustomerCollection from "./collections/CustomerCollection";
 import FirmCollection from "./collections/FirmCollection";
 import PaymentMethodCollection from "./collections/PaymentMethodCollection";
 import PaymentTerms from "./collections/PaymentTerms";
+import TaxTypeCollection from "./collections/TaxTypeCollection";
 
 export {
   AccountCollection,
@@ -27,6 +28,7 @@ export {
   FirmCollection,
   PaymentMethodCollection,
   PaymentTerms,
+  TaxTypeCollection,
 };
 
 // MODELS
@@ -41,6 +43,7 @@ import Firm from "./models/Firm";
 import PaymentMethod from "./models/PaymentMethod";
 import PaymentTerm from "./models/PaymentTerm";
 import Settings from "./models/Settings";
+import TaxType from "./models/TaxType";
 
 export {
   Account,
@@ -54,4 +57,5 @@ export {
   PaymentMethod,
   PaymentTerm,
   Settings,
+  TaxType,
 };
