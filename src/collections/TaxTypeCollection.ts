@@ -12,10 +12,23 @@ export default class TaxTypeCollection extends Collection<TaxType> {
     return {
       fetch: "taxtypes.index",
       list: "taxtypes.list",
+      reorder: "taxtypes.reorder",
+    };
+  }
+
+  options(): Record<string, any> {
+    return {
+      methods: {
+        reorder: "POST",
+      },
     };
   }
 
   async list(): Promise<Response<TaxTypeData[]>> {
     return await this.createCustomRequest("list");
+  }
+
+  async reorder(arListId: number[]): Promise<Response<number[]>> {
+    return await this.createCustomRequest("reorder", { ids: arListId });
   }
 }

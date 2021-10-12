@@ -9,6 +9,7 @@ export default class TaxType extends Model {
       code: null,
       description: null,
       percent: null,
+      sort_order: null,
       created_at: null,
       updated_at: null,
     };

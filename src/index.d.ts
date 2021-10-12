@@ -95,6 +95,7 @@ declare module "@planetadeleste/vue-mc-gw" {
   class TaxType extends Model {}
   class TaxTypeCollection extends Collection<TaxType> {
     list(): Promise<Response<TaxTypeData[]>>;
+    reorder(arListId: number[]): Promise<Response<number[]>>;
   }
 
   interface ProductGw extends Model, ProductGwData {}
