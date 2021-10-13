@@ -29,6 +29,6 @@ export default class TaxTypeCollection extends Collection<TaxType> {
   }
 
   async reorder(arListId: number[]): Promise<Response<number[]>> {
-    return await this.createCustomRequest("reorder", { ids: arListId });
+    return await this.customRequest("reorder", { ids: arListId });
   }
 }

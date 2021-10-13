@@ -931,20 +931,10 @@
   dependencies:
     "@planetadeleste/vue-mc" "^1.0.77"
 
-"@planetadeleste/vue-mc-shopaholic@^1.1.16":
-  version "1.1.16"
-  resolved "https://registry.yarnpkg.com/@planetadeleste/vue-mc-shopaholic/-/vue-mc-shopaholic-1.1.16.tgz#2910618fa7ac677cb970325800ffb8326d71cb7a"
-  integrity sha512-mAVuSDZPp8ytTUFWBA9FNfdlqPMB4t5KzXPsnoZXkXJEcXukbs8ava7BRHM3zJ5j6UU3gb6lBGrqN+IAN3WTMw==
-  dependencies:
-    "@planetadeleste/vue-mc" "^1.0.77"
-    axios "^0.21.1"
-    object-to-formdata "^4.1.0"
-    vue-mc "^0.6.0"
-
 "@planetadeleste/vue-mc@^1.0.77":
-  version "1.0.87"
-  resolved "https://registry.yarnpkg.com/@planetadeleste/vue-mc/-/vue-mc-1.0.87.tgz#5009a975103909abf528846f6d439c9a2a708e9a"
-  integrity sha512-5x/etqH512yg4FS667p8EhXiMvjs1MLb0HT5N6wzJWICiM6M+sYFJni6r9khyY45bD6aY+QHkIH9nKR3jt578A==
+  version "1.0.101"
+  resolved "https://registry.yarnpkg.com/@planetadeleste/vue-mc/-/vue-mc-1.0.101.tgz#5d191567aa59a8b49eca92391c70d598ca295842"
+  integrity sha512-Mi0F6YgWppMrSq5Hnoih2drbllzoaxamABhVeYAqt+hljWuVMDn6Hix/Kf1uzZLIvyEQLIL1cZpXVOZfbzPs8g==
   dependencies:
     object-to-formdata "^4.1.0"
 
@@ -1217,13 +1207,6 @@ axios@0.19.0:
   dependencies:
     follow-redirects "1.5.10"
     is-buffer "^2.0.2"
-
-axios@^0.21.1:
-  version "0.21.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
-  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
-  dependencies:
-    follow-redirects "^1.10.0"
 
 babel-plugin-dynamic-import-node@^2.3.3:
   version "2.3.3"
@@ -1744,11 +1727,6 @@ follow-redirects@1.5.10:
   integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
   dependencies:
     debug "=3.1.0"
-
-follow-redirects@^1.10.0:
-  version "1.14.1"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.1.tgz#d9114ded0a1cfdd334e164e6662ad02bfd91ff43"
-  integrity sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==
 
 fs.realpath@^1.0.0:
   version "1.0.0"
