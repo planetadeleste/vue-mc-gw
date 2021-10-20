@@ -1,4 +1,5 @@
 import "@planetadeleste/vue-mc";
+import { CurrencyData } from "@planetadeleste/vue-mc-shopaholic";
 import {
   AccountData,
   AccountConfigData,
@@ -44,7 +45,14 @@ declare module "@planetadeleste/vue-mc-gw" {
   }
 
   interface Customer extends Model, CustomerData {}
-  class Customer extends Model {}
+  class Customer extends Model {
+    getPaymentTerms(): Promise<Response<PaymentTermData[]>>;
+    addPaymentTerms(iPaymentTermId: number): Promise<Response<PaymentTermData[]>>;
+    delPaymentTerms(iPaymentTermId: number): Promise<Response<PaymentTermData[]>>;
+    getCurrencies(): Promise<Response<CurrencyData[]>>;
+    addCurrency(iCurrencyId: number): Promise<Response<CurrencyData[]>>;
+    delCurrency(iCurrencyId: number): Promise<Response<CurrencyData[]>>;
+  }
   class CustomerCollection extends Collection<Customer> {
     byCompany<T extends CustomerCollection>(this: T, iCompanyID: number): T;
     byActive<T extends CustomerCollection>(this: T): T;
