@@ -58,19 +58,19 @@ export default class Customer extends Model {
   }
 
   async getPaymentTerms(): Promise<Response<PaymentTermData[]>> {
-    return await this.customRequest("fetchPaymentterms", { id: this.id });
+    return await this.createCustomRequest("fetchPaymentterms", { id: this.id });
   }
 
   async addPaymentTerms(iPaymentTermId: number): Promise<Response<PaymentTermData[]>> {
-    return await this.customRequest("createPaymentterm", { id: this.id, paymentterm_id: iPaymentTermId });
+    return await this.createCustomRequest("createPaymentterm", { id: this.id, paymentterm_id: iPaymentTermId });
   }
 
   async delPaymentTerms(iPaymentTermId: number): Promise<Response<PaymentTermData[]>> {
-    return await this.customRequest("destroyPaymentterm", { id: this.id, paymentterm_id: iPaymentTermId });
+    return await this.createCustomRequest("destroyPaymentterm", { id: this.id, paymentterm_id: iPaymentTermId });
   }
 
   async getCurrencies(): Promise<Response<CurrencyData[]>> {
-    return await this.customRequest("fetchCurrencies", { id: this.id });
+    return await this.createCustomRequest("fetchCurrencies", { id: this.id });
   }
 
   async addCurrency(iCurrencyId: number, fCreditLimit?: number): Promise<Response<CurrencyData[]>> {
@@ -80,10 +80,10 @@ export default class Customer extends Model {
       set(obData, "credit_limit", fCreditLimit);
     }
 
-    return await this.customRequest("createCurrency", obData);
+    return await this.createCustomRequest("createCurrency", obData);
   }
 
   async delCurrency(iCurrencyId: number): Promise<Response<CurrencyData[]>> {
-    return await this.customRequest("destroyCurrency", { id: this.id, currency_id: iCurrencyId });
+    return await this.createCustomRequest("destroyCurrency", { id: this.id, currency_id: iCurrencyId });
   }
 }
