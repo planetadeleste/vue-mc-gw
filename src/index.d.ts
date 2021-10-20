@@ -50,7 +50,7 @@ declare module "@planetadeleste/vue-mc-gw" {
     addPaymentTerms(iPaymentTermId: number): Promise<Response<PaymentTermData[]>>;
     delPaymentTerms(iPaymentTermId: number): Promise<Response<PaymentTermData[]>>;
     getCurrencies(): Promise<Response<CurrencyData[]>>;
-    addCurrency(iCurrencyId: number): Promise<Response<CurrencyData[]>>;
+    addCurrency(iCurrencyId: number, fCreditLimit?: number): Promise<Response<CurrencyData[]>>;
     delCurrency(iCurrencyId: number): Promise<Response<CurrencyData[]>>;
   }
   class CustomerCollection extends Collection<Customer> {

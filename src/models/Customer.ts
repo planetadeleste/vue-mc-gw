@@ -1,7 +1,7 @@
 import { PaymentTermData } from "@/types";
 import { Model } from "@planetadeleste/vue-mc";
 import { CurrencyData } from "@planetadeleste/vue-mc-shopaholic";
-import { toNumber } from "lodash";
+import { set, toNumber } from "lodash";
 import { Response } from "vue-mc";
 
 export default class Customer extends Model {
@@ -9,6 +9,7 @@ export default class Customer extends Model {
     return {
       id: null,
       active: true,
+      tax_exempt: false,
       type: 1,
       preview_image: null,
       firm: {},
@@ -72,8 +73,14 @@ export default class Customer extends Model {
     return await this.customRequest("fetchCurrencies", { id: this.id });
   }
 
-  async addCurrency(iCurrencyId: number): Promise<Response<CurrencyData[]>> {
-    return await this.customRequest("createCurrency", { id: this.id, currency_id: iCurrencyId });
+  async addCurrency(iCurrencyId: number, fCreditLimit?: number): Promise<Response<CurrencyData[]>> {
+    const obData: Record<string, any> = { id: this.id, currency_id: iCurrencyId };
+
+    if (fCreditLimit) {
+      set(obData, "credit_limit", fCreditLimit);
+    }
+
+    return await this.customRequest("createCurrency", obData);
   }
 
   async delCurrency(iCurrencyId: number): Promise<Response<CurrencyData[]>> {

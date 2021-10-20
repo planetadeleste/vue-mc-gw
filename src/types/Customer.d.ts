@@ -1,5 +1,7 @@
 import { FirmData } from "./Firm";
 import { CompanyData } from "./Company";
+import { CurrencyData } from "@planetadeleste/vue-mc-shopaholic";
+import { PaymentTermData } from "./PaymentTerm";
 
 /**
  * 1 - Customer only
@@ -13,6 +15,7 @@ export interface CustomerData {
   company_id: number;
   type: CustomerType;
   active: boolean;
+  tax_exempt: boolean;
   is_customer: boolean;
   is_provider: boolean;
   created_at: string;
@@ -20,4 +23,6 @@ export interface CustomerData {
   preview_image: string;
   firm: FirmData;
   company: CompanyData;
+  currencies: CurrencyData[];
+  paymentterms: PaymentTermData[];
 }
