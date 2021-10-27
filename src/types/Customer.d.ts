@@ -13,6 +13,8 @@ export type CustomerType = 1 | 2 | 3;
 export interface CustomerData {
   id: number;
   company_id: number;
+  currency_limit_id: number;
+  credit_limit: number;
   type: CustomerType;
   active: boolean;
   tax_exempt: boolean;
@@ -23,6 +25,7 @@ export interface CustomerData {
   preview_image: string;
   firm: FirmData;
   company: CompanyData;
+  currency_limit: CurrencyData;
   currencies: CurrencyData[];
   paymentterms: PaymentTermData[];
 }

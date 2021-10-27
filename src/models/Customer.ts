@@ -8,11 +8,14 @@ export default class Customer extends Model {
   defaults(): Record<string, any> {
     return {
       id: null,
+      company_id: null,
+      currency_limit_id: null,
       active: true,
       tax_exempt: false,
       type: 1,
-      preview_image: null,
       firm: {},
+      preview_image: null,
+      credit_limit: null,
     };
   }
 
@@ -61,19 +64,34 @@ export default class Customer extends Model {
     return await this.createCustomRequest("fetchPaymentterms", ["id"]);
   }
 
-  async addPaymentTerms(iPaymentTermId: number): Promise<Response<PaymentTermData[]>> {
-    return await this.createCustomRequest("createPaymentterm", { paymentterm_id: iPaymentTermId }, ["id"]);
+  async addPaymentTerms(
+    iPaymentTermId: number
+  ): Promise<Response<PaymentTermData[]>> {
+    return await this.createCustomRequest(
+      "createPaymentterm",
+      { paymentterm_id: iPaymentTermId },
+      ["id"]
+    );
   }
 
-  async delPaymentTerms(iPaymentTermId: number): Promise<Response<PaymentTermData[]>> {
-    return await this.createCustomRequest("destroyPaymentterm", { paymentterm_id: iPaymentTermId }, ["id"]);
+  async delPaymentTerms(
+    iPaymentTermId: number
+  ): Promise<Response<PaymentTermData[]>> {
+    return await this.createCustomRequest(
+      "destroyPaymentterm",
+      { paymentterm_id: iPaymentTermId },
+      ["id"]
+    );
   }
 
   async getCurrencies(): Promise<Response<CurrencyData[]>> {
     return await this.createCustomRequest("fetchCurrencies", ["id"]);
   }
 
-  async addCurrency(iCurrencyId: number, fCreditLimit?: number): Promise<Response<CurrencyData[]>> {
+  async addCurrency(
+    iCurrencyId: number,
+    fCreditLimit?: number
+  ): Promise<Response<CurrencyData[]>> {
     const obData: Record<string, any> = { currency_id: iCurrencyId };
 
     if (fCreditLimit) {
@@ -84,6 +102,10 @@ export default class Customer extends Model {
   }
 
   async delCurrency(iCurrencyId: number): Promise<Response<CurrencyData[]>> {
-    return await this.createCustomRequest("destroyCurrency", { currency_id: iCurrencyId }, ["id"]);
+    return await this.createCustomRequest(
+      "destroyCurrency",
+      { currency_id: iCurrencyId },
+      ["id"]
+    );
   }
 }
