@@ -1,22 +1,23 @@
 import "@planetadeleste/vue-mc";
 import { CurrencyData } from "@planetadeleste/vue-mc-shopaholic";
 import {
-  AccountData,
   AccountConfigData,
+  AccountData,
   AccountTypeData,
   BranchData,
   CompanyData,
   CurrencyRateData,
   CustomerData,
   CustomerType,
+  DiscountData,
   FirmData,
+  PaymentMethodData,
   PaymentTermData,
   PaymentTermFrequency,
   PaymentTermType,
-  PaymentMethodData,
+  ProductGwData,
   SettingsData,
   TaxTypeData,
-  ProductGwData,
 } from "./types";
 
 declare module "@planetadeleste/vue-mc-gw" {
@@ -47,10 +48,17 @@ declare module "@planetadeleste/vue-mc-gw" {
   interface Customer extends Model, CustomerData {}
   class Customer extends Model {
     getPaymentTerms(): Promise<Response<PaymentTermData[]>>;
-    addPaymentTerms(iPaymentTermId: number): Promise<Response<PaymentTermData[]>>;
-    delPaymentTerms(iPaymentTermId: number): Promise<Response<PaymentTermData[]>>;
+    addPaymentTerms(
+      iPaymentTermId: number
+    ): Promise<Response<PaymentTermData[]>>;
+    delPaymentTerms(
+      iPaymentTermId: number
+    ): Promise<Response<PaymentTermData[]>>;
     getCurrencies(): Promise<Response<CurrencyData[]>>;
-    addCurrency(iCurrencyId: number, fCreditLimit?: number): Promise<Response<CurrencyData[]>>;
+    addCurrency(
+      iCurrencyId: number,
+      fCreditLimit?: number
+    ): Promise<Response<CurrencyData[]>>;
     delCurrency(iCurrencyId: number): Promise<Response<CurrencyData[]>>;
   }
   class CustomerCollection extends Collection<Customer> {
@@ -112,6 +120,12 @@ declare module "@planetadeleste/vue-mc-gw" {
     list(): Promise<Response<ProductGwData[]>>;
   }
 
+  interface Discount extends Model, DiscountData {}
+  class Discount extends Model {}
+  class DiscountCollection extends Collection<Discount> {
+    list(): Promise<Response<DiscountData[]>>;
+  }
+
   export {
     Account,
     AccountCollection,
@@ -135,6 +149,9 @@ declare module "@planetadeleste/vue-mc-gw" {
     CustomerCollection,
     CustomerData,
     CustomerType,
+    Discount,
+    DiscountCollection,
+    DiscountData,
     Firm,
     FirmCollection,
     FirmData,

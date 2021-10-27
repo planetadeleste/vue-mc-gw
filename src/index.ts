@@ -1,5 +1,5 @@
 /**
- * Models and Collections for VueMcGw plugin
+ * Models and Collections for PlanetaDelEsteGw plugin
  *
  * @author Alvaro Canepa <bfpdevel@gmail.com>
  */
@@ -12,6 +12,7 @@ import BranchCollection from "./collections/BranchCollection";
 import CompanyCollection from "./collections/CompanyCollection";
 import CurrencyRates from "./collections/CurrencyRates";
 import CustomerCollection from "./collections/CustomerCollection";
+import DiscountCollection from "./collections/DiscountCollection";
 import FirmCollection from "./collections/FirmCollection";
 import PaymentMethodCollection from "./collections/PaymentMethodCollection";
 import PaymentTerms from "./collections/PaymentTerms";
@@ -26,6 +27,7 @@ export {
   CompanyCollection,
   CurrencyRates,
   CustomerCollection,
+  DiscountCollection,
   FirmCollection,
   PaymentMethodCollection,
   PaymentTerms,
@@ -41,6 +43,7 @@ import Branch from "./models/Branch";
 import Company from "./models/Company";
 import CurrencyRate from "./models/CurrencyRate";
 import Customer from "./models/Customer";
+import Discount from "./models/Discount";
 import Firm from "./models/Firm";
 import PaymentMethod from "./models/PaymentMethod";
 import PaymentTerm from "./models/PaymentTerm";
@@ -56,6 +59,7 @@ export {
   Company,
   CurrencyRate,
   Customer,
+  Discount,
   Firm,
   PaymentMethod,
   PaymentTerm,

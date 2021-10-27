@@ -5,6 +5,7 @@ export * from "./Branch";
 export * from "./Company";
 export * from "./CurrencyRate";
 export * from "./Customer";
+export * from "./Discount";
 export * from "./Firm";
 export * from "./PaymentMethod";
 export * from "./PaymentTerm";
