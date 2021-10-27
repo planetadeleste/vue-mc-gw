@@ -2,6 +2,7 @@ import { FirmData } from "./Firm";
 import { CompanyData } from "./Company";
 import { CurrencyData } from "@planetadeleste/vue-mc-shopaholic";
 import { PaymentTermData } from "./PaymentTerm";
+import { DiscountData } from "./Discount";
 
 /**
  * 1 - Customer only
@@ -28,4 +29,5 @@ export interface CustomerData {
   currency_limit: CurrencyData;
   currencies: CurrencyData[];
   paymentterms: PaymentTermData[];
+  discounts: DiscountData[];
 }

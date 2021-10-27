@@ -931,10 +931,10 @@
   dependencies:
     "@planetadeleste/vue-mc" "^1.0.77"
 
-"@planetadeleste/vue-mc-shopaholic@^1.1.23":
-  version "1.1.23"
-  resolved "https://registry.yarnpkg.com/@planetadeleste/vue-mc-shopaholic/-/vue-mc-shopaholic-1.1.23.tgz#0e3459a94963a9dcd8d4f7d3b7735bb4d52dfb0c"
-  integrity sha512-4Cnn3Q887jqDvfLtsOEc1PWLKYkBrVa4eZ6AM9hzuE03BMU4PfQiyvrjd4KHJYrKvnvdX2FN6IYafon4YyKpvQ==
+"@planetadeleste/vue-mc-shopaholic@^1.1.24":
+  version "1.1.24"
+  resolved "https://registry.yarnpkg.com/@planetadeleste/vue-mc-shopaholic/-/vue-mc-shopaholic-1.1.24.tgz#8625a4a82be1d8dd358ad188a8d83d263b8aa8ca"
+  integrity sha512-NRt7PJ1pYQFDIAMScUVjUehgc5AoKG0YMZgABrCuol+yUsI6YZFZ6Bq1YlAGOS2XsGLEcuHuxOpQxgXCXz0f3g==
   dependencies:
     "@planetadeleste/vue-mc" "^1.0.77"
     axios "^0.21.1"
@@ -1311,9 +1311,9 @@ camelcase@^5.0.0:
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
 caniuse-lite@^1.0.30001219:
-  version "1.0.30001227"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001227.tgz#437fe8b514ac4512d9bdb4ea79f20c400bd0b4d1"
-  integrity sha512-HHZT4QpUw4Pf45IE3xxKAPgAN3q2aRai/x5TSHP8lrrKzARoH0IeBviwStcRi5lsFlscTkBbXC7gXyms43151A==
+  version "1.0.30001271"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001271.tgz"
+  integrity sha512-BBruZFWmt3HFdVPS8kceTBIguKxu4f99n5JNp06OlPD/luoAMIaIK5ieV5YjnBLH3Nysai9sxj9rpJj4ZisXOA==
 
 chalk@^2.0.0:
   version "2.4.2"
