@@ -10,6 +10,7 @@ import AccountConfigCollection from "./collections/AccountConfigCollection";
 import AccountTypeCollection from "./collections/AccountTypeCollection";
 import BranchCollection from "./collections/BranchCollection";
 import CompanyCollection from "./collections/CompanyCollection";
+import CompanySettingsCollection from "./collections/CompanySettingsCollection";
 import CurrencyRates from "./collections/CurrencyRates";
 import CustomerCollection from "./collections/CustomerCollection";
 import DiscountCollection from "./collections/DiscountCollection";
@@ -25,6 +26,7 @@ export {
   AccountTypeCollection,
   BranchCollection,
   CompanyCollection,
+  CompanySettingsCollection,
   CurrencyRates,
   CustomerCollection,
   DiscountCollection,
@@ -41,6 +43,7 @@ import AccountConfig from "./models/AccountConfig";
 import AccountType from "./models/AccountType";
 import Branch from "./models/Branch";
 import Company from "./models/Company";
+import CompanySettings from "./models/CompanySettings";
 import CurrencyRate from "./models/CurrencyRate";
 import Customer from "./models/Customer";
 import Discount from "./models/Discount";
@@ -57,6 +60,7 @@ export {
   AccountType,
   Branch,
   Company,
+  CompanySettings,
   CurrencyRate,
   Customer,
   Discount,

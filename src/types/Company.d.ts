@@ -1,4 +1,5 @@
 import { BranchData } from "./Branch";
+import { CompanySettingsData } from "./CompanySettings";
 import { FirmData } from "./Firm";
 
 export interface CompanyData {
@@ -9,4 +10,5 @@ export interface CompanyData {
   preview_image: string;
   branches: BranchData[];
   firm: FirmData;
+  settings: CompanySettingsData;
 }

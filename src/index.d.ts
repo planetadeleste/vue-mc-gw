@@ -6,6 +6,7 @@ import {
   AccountTypeData,
   BranchData,
   CompanyData,
+  CompanySettingsData,
   CurrencyRateData,
   CustomerData,
   CustomerType,
@@ -44,6 +45,10 @@ declare module "@planetadeleste/vue-mc-gw" {
     ): T;
     byUser<T extends CompanyCollection>(this: T, sValue: string | number): T;
   }
+
+  interface CompanySettings extends Model, CompanySettingsData {}
+  class CompanySettings extends Model {}
+  class CompanySettingsCollection extends Collection<CompanySettings> {}
 
   interface Customer extends Model, CustomerData {}
   class Customer extends Model {
@@ -142,6 +147,9 @@ declare module "@planetadeleste/vue-mc-gw" {
     Company,
     CompanyCollection,
     CompanyData,
+    CompanySettings,
+    CompanySettingsCollection,
+    CompanySettingsData,
     CurrencyRate,
     CurrencyRateData,
     CurrencyRates,

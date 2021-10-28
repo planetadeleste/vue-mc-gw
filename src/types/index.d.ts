@@ -3,6 +3,7 @@ export * from "./AccountConfig";
 export * from "./AccountType";
 export * from "./Branch";
 export * from "./Company";
+export * from "./CompanySettings";
 export * from "./CurrencyRate";
 export * from "./Customer";
 export * from "./Discount";
