@@ -15,6 +15,9 @@ import CurrencyRates from "./collections/CurrencyRates";
 import CustomerCollection from "./collections/CustomerCollection";
 import DiscountCollection from "./collections/DiscountCollection";
 import FirmCollection from "./collections/FirmCollection";
+import InvoiceCollection from "./collections/InvoiceCollection";
+import InvoicePositionCollection from "./collections/InvoicePositionCollection";
+import InvoiceTypeCollection from "./collections/InvoiceTypeCollection";
 import PaymentMethodCollection from "./collections/PaymentMethodCollection";
 import PaymentTerms from "./collections/PaymentTerms";
 import ProductGwCollection from "./collections/ProductGwCollection";
@@ -31,6 +34,9 @@ export {
   CustomerCollection,
   DiscountCollection,
   FirmCollection,
+  InvoiceCollection,
+  InvoicePositionCollection,
+  InvoiceTypeCollection,
   PaymentMethodCollection,
   PaymentTerms,
   ProductGwCollection,
@@ -48,6 +54,9 @@ import CurrencyRate from "./models/CurrencyRate";
 import Customer from "./models/Customer";
 import Discount from "./models/Discount";
 import Firm from "./models/Firm";
+import Invoice from "./models/Invoice";
+import InvoicePosition from "./models/InvoicePosition";
+import InvoiceType from "./models/InvoiceType";
 import PaymentMethod from "./models/PaymentMethod";
 import PaymentTerm from "./models/PaymentTerm";
 import ProductGw from "./models/ProductGw";
@@ -65,6 +74,9 @@ export {
   Customer,
   Discount,
   Firm,
+  Invoice,
+  InvoicePosition,
+  InvoiceType,
   PaymentMethod,
   PaymentTerm,
   ProductGw,
