@@ -6,10 +6,13 @@ export default class Invoice extends Model {
     return {
       id: null,
       company_id: null,
+      branch_id: null,
       customer_id: null,
       invoice_type_id: null,
       payment_term_id: null,
       payment_method_id: null,
+      invoice_group_id: null,
+      invoice_movement_type_id: null,
       currency_id: null,
       order_serial: null,
       order_number: null,
@@ -17,7 +20,8 @@ export default class Invoice extends Model {
       description: null,
       payment_response: null,
       customer_data: null,
-      created_at: null,
+      is_contingency: false,
+      created_at: new Date().toISOString(),
       updated_at: null,
     };
   }

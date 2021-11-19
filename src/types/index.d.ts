@@ -9,6 +9,8 @@ export * from "./Customer";
 export * from "./Discount";
 export * from "./Firm";
 export * from "./Invoice";
+export * from "./InvoiceGroup";
+export * from "./InvoiceMovementType";
 export * from "./InvoicePosition";
 export * from "./InvoiceType";
 export * from "./PaymentMethod";

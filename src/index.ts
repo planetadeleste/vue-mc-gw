@@ -16,6 +16,8 @@ import CustomerCollection from "./collections/CustomerCollection";
 import DiscountCollection from "./collections/DiscountCollection";
 import FirmCollection from "./collections/FirmCollection";
 import InvoiceCollection from "./collections/InvoiceCollection";
+import InvoiceGroupCollection from "./collections/InvoiceGroupCollection";
+import InvoiceMovementTypeCollection from "./collections/InvoiceMovementTypeCollection";
 import InvoicePositionCollection from "./collections/InvoicePositionCollection";
 import InvoiceTypeCollection from "./collections/InvoiceTypeCollection";
 import PaymentMethodCollection from "./collections/PaymentMethodCollection";
@@ -35,6 +37,8 @@ export {
   DiscountCollection,
   FirmCollection,
   InvoiceCollection,
+  InvoiceGroupCollection,
+  InvoiceMovementTypeCollection,
   InvoicePositionCollection,
   InvoiceTypeCollection,
   PaymentMethodCollection,
@@ -55,6 +59,8 @@ import Customer from "./models/Customer";
 import Discount from "./models/Discount";
 import Firm from "./models/Firm";
 import Invoice from "./models/Invoice";
+import InvoiceGroup from "./models/InvoiceGroup";
+import InvoiceMovementType from "./models/InvoiceMovementType";
 import InvoicePosition from "./models/InvoicePosition";
 import InvoiceType from "./models/InvoiceType";
 import PaymentMethod from "./models/PaymentMethod";
@@ -75,6 +81,8 @@ export {
   Discount,
   Firm,
   Invoice,
+  InvoiceGroup,
+  InvoiceMovementType,
   InvoicePosition,
   InvoiceType,
   PaymentMethod,
