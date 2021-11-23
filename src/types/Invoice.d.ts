@@ -24,6 +24,7 @@ export interface InvoiceData {
   payment_response: Record<string, any>;
   customer_data: Record<string, any>;
   is_contingency: boolean;
+  is_cash: boolean;
   created_at: string;
   updated_at: string;
 

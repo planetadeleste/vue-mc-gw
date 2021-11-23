@@ -21,6 +21,7 @@ export default class Invoice extends Model {
       payment_response: null,
       customer_data: null,
       is_contingency: false,
+      is_cash: true,
       created_at: new Date().toISOString(),
       updated_at: null,
     };
