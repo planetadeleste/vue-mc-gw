@@ -74,6 +74,8 @@ declare module "@planetadeleste/vue-mc-gw" {
   class CustomerCollection extends Collection<Customer> {
     byCompany<T extends CustomerCollection>(this: T, iCompanyID: number): T;
     byActive<T extends CustomerCollection>(this: T): T;
+    bySearch<T extends CustomerCollection>(this: T, sValue: string): T;
+    list(): Promise<Response<CustomerData[]>>;
   }
 
   interface CurrencyRate extends Model, CurrencyRateData {}
