@@ -24,6 +24,7 @@ export default class Invoice extends Model {
       is_cash: true,
       created_at: new Date().toISOString(),
       updated_at: null,
+      due_date: null,
     };
   }
 

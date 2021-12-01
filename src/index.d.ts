@@ -1,5 +1,5 @@
 import "@planetadeleste/vue-mc";
-import { CurrencyData } from "@planetadeleste/vue-mc-shopaholic";
+import { CurrencyData, OfferData } from "@planetadeleste/vue-mc-shopaholic";
 import {
   AccountConfigData,
   AccountData,
@@ -13,14 +13,15 @@ import {
   DiscountData,
   FirmData,
   InvoiceData,
-  InvoicePositionData,
-  InvoiceTypeData,
   InvoiceGroupData,
   InvoiceMovementTypeData,
+  InvoicePositionData,
+  InvoiceTypeData,
   PaymentMethodData,
   PaymentTermData,
   PaymentTermFrequency,
   PaymentTermType,
+  PriceListData,
   ProductGwData,
   SettingsData,
   TaxTypeData,
@@ -168,6 +169,14 @@ declare module "@planetadeleste/vue-mc-gw" {
     list(): Promise<Response<InvoiceMovementTypeData[]>>;
   }
 
+  interface PriceList extends Model, PriceListData {}
+  class PriceList extends Model {
+    getOffers(): Promise<Response<OfferData[]>>;
+  }
+  class PriceListCollection extends Collection<PriceList> {
+    list(): Promise<Response<PriceListData[]>>;
+  }
+
   export {
     Account,
     AccountCollection,
@@ -222,6 +231,9 @@ declare module "@planetadeleste/vue-mc-gw" {
     PaymentTermFrequency,
     PaymentTerms,
     PaymentTermType,
+    PriceList,
+    PriceListCollection,
+    PriceListData,
     ProductGw,
     ProductGwCollection,
     ProductGwData,

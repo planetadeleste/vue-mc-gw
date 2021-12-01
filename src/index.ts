@@ -22,6 +22,7 @@ import InvoicePositionCollection from "./collections/InvoicePositionCollection";
 import InvoiceTypeCollection from "./collections/InvoiceTypeCollection";
 import PaymentMethodCollection from "./collections/PaymentMethodCollection";
 import PaymentTerms from "./collections/PaymentTerms";
+import PriceListCollection from "./collections/PriceListCollection";
 import ProductGwCollection from "./collections/ProductGwCollection";
 import TaxTypeCollection from "./collections/TaxTypeCollection";
 
@@ -43,6 +44,7 @@ export {
   InvoiceTypeCollection,
   PaymentMethodCollection,
   PaymentTerms,
+  PriceListCollection,
   ProductGwCollection,
   TaxTypeCollection,
 };
@@ -65,6 +67,7 @@ import InvoicePosition from "./models/InvoicePosition";
 import InvoiceType from "./models/InvoiceType";
 import PaymentMethod from "./models/PaymentMethod";
 import PaymentTerm from "./models/PaymentTerm";
+import PriceList from "./models/PriceList";
 import ProductGw from "./models/ProductGw";
 import Settings from "./models/Settings";
 import TaxType from "./models/TaxType";
@@ -87,6 +90,7 @@ export {
   InvoiceType,
   PaymentMethod,
   PaymentTerm,
+  PriceList,
   ProductGw,
   Settings,
   TaxType,

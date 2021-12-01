@@ -15,6 +15,7 @@ export * from "./InvoicePosition";
 export * from "./InvoiceType";
 export * from "./PaymentMethod";
 export * from "./PaymentTerm";
+export * from "./PriceList";
 export * from "./ProductGw";
 export * from "./Settings";
 export * from "./TaxType";

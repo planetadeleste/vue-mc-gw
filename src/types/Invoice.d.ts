@@ -27,6 +27,7 @@ export interface InvoiceData {
   is_cash: boolean;
   created_at: string;
   updated_at: string;
+  due_date: string;
 
   company: CompanyData;
   branch: BranchData;
