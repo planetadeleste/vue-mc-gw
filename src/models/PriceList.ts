@@ -30,6 +30,7 @@ export default class PriceList extends Model {
       create: "pricelists.store",
       update: "pricelists.update",
       delete: "pricelists.destroy",
+      fetchOffers: "pricelists.offers",
     };
   }
 
