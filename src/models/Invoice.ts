@@ -14,6 +14,7 @@ export default class Invoice extends Model {
       invoice_group_id: null,
       invoice_movement_type_id: null,
       currency_id: null,
+      price_list_id: null,
       order_serial: null,
       order_number: null,
       transaction_id: null,

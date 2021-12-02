@@ -5,6 +5,7 @@ import { CustomerData } from "./Customer";
 import { InvoicePositionData } from "./InvoicePosition";
 import { InvoiceTypeData } from "./InvoiceType";
 import { PaymentTermData } from "./PaymentTerm";
+import { PriceListData } from "./PriceList";
 
 export interface InvoiceData {
   id: number;
@@ -17,6 +18,7 @@ export interface InvoiceData {
   invoice_group_id: number;
   invoice_movement_type_id: number;
   currency_id: number;
+  price_list_id: number;
   order_serial: string;
   order_number: number;
   transaction_id: number;
@@ -36,5 +38,6 @@ export interface InvoiceData {
   payment_term: PaymentTermData;
   payment_method: PaymentMethodData;
   currency: CurrencyData;
+  price_list: PriceListData;
   positions: InvoicePositionData[];
 }
