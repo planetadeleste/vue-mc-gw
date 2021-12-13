@@ -7,7 +7,11 @@ export default class Company extends Model {
       id: null,
       active: true,
       preview_image: null,
-      firm: {}
+      ucfe_code: null,
+      ucfe_terminal: null,
+      ucfe_url: null,
+      ucfe_password: null,
+      firm: {},
     };
   }
 
