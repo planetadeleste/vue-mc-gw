@@ -7,19 +7,9 @@ export default class Branch extends Model {
     return {
       id: null,
       company_id: null,
-      country_id: null,
-      state_id: null,
-      town_id: null,
-      active: null,
-      is_default: null,
-      name: null,
-      code: null,
-      address: null,
-      phone: null,
-      email: null,
-      ucfe_code: null,
-      ucfe_terminal: null,
-      ucfe_password: null,
+      active: true,
+      is_default: false,
+      firm: {}
     };
   }
 
