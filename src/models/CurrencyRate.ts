@@ -6,6 +6,7 @@ export default class CurrencyRate extends Model {
     return {
       id: null,
       currency_id: null,
+      company_id: null,
       name: null,
       rate: null,
       rated_at: null,

@@ -30,6 +30,11 @@ export interface InvoiceData {
   created_at: string;
   updated_at: string;
   due_date: string;
+  sign_at: string;
+  cert: string;
+  qr: string;
+  id_cae: string;
+  expiration_cae: string;
 
   company: CompanyData;
   branch: BranchData;

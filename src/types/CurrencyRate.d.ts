@@ -5,6 +5,7 @@ export interface CurrencyRateData {
   name: string;
   rate: string | number;
   currency_id: number;
+  company_id: number;
   currency: CurrencyData;
   rated_at: string;
   created_at: string;

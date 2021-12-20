@@ -26,6 +26,11 @@ export default class Invoice extends Model {
       created_at: new Date().toISOString(),
       updated_at: null,
       due_date: null,
+      sign_at: null,
+      cert: null,
+      qr: null,
+      id_cae: null,
+      expiration_cae: null,
     };
   }
 
