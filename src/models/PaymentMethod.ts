@@ -8,6 +8,8 @@ export default class PaymentMethod extends Model {
       active: true,
       name: null,
       code: null,
+      in_account: false,
+      in_invoice: false,
     };
   }
 

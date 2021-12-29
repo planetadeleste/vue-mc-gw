@@ -18,4 +18,12 @@ export default class PaymentMethodCollection extends Collection<PaymentMethod> {
   async list(): Promise<Response<PaymentMethodData[]>> {
     return await this.createCustomRequest("list");
   }
+
+  inAccount<T extends PaymentMethodCollection>(this: T): T {
+    return this.filterBy({ inAccount: 1 });
+  }
+
+  inInvoice<T extends PaymentMethodCollection>(this: T): T {
+    return this.filterBy({ inInvoice: 1 });
+  }
 }

@@ -45,4 +45,11 @@ export interface InvoiceData {
   currency: CurrencyData;
   price_list: PriceListData;
   positions: InvoicePositionData[];
+
+  is_signed: boolean;
+  position_total_price_value: number;
+  total_price_value: number;
+  rounded_price_value: number;
+  total_price_without_tax_value: number;
+  total_tax_value: number;
 }

@@ -112,6 +112,8 @@ declare module "@planetadeleste/vue-mc-gw" {
   class PaymentMethod extends Model {}
   class PaymentMethodCollection extends Collection<PaymentMethod> {
     list(): Promise<Response<PaymentMethodData[]>>;
+    inAccount<T extends PaymentMethodCollection>(this: T): T;
+    inInvoice<T extends PaymentMethodCollection>(this: T): T;
   }
 
   interface AccountConfig extends Model, AccountConfigData {}
