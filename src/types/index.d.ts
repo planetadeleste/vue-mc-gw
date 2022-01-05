@@ -1,6 +1,7 @@
 export * from "./Account";
 export * from "./AccountConfig";
 export * from "./AccountType";
+export * from "./Bank";
 export * from "./Branch";
 export * from "./Company";
 export * from "./CompanySettings";

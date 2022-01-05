@@ -8,6 +8,7 @@
 import AccountCollection from "./collections/AccountCollection";
 import AccountConfigCollection from "./collections/AccountConfigCollection";
 import AccountTypeCollection from "./collections/AccountTypeCollection";
+import BankCollection from "./collections/BankCollection";
 import BranchCollection from "./collections/BranchCollection";
 import CompanyCollection from "./collections/CompanyCollection";
 import CompanySettingsCollection from "./collections/CompanySettingsCollection";
@@ -30,6 +31,7 @@ export {
   AccountCollection,
   AccountConfigCollection,
   AccountTypeCollection,
+  BankCollection,
   BranchCollection,
   CompanyCollection,
   CompanySettingsCollection,
@@ -53,6 +55,7 @@ export {
 import Account from "./models/Account";
 import AccountConfig from "./models/AccountConfig";
 import AccountType from "./models/AccountType";
+import Bank from "./models/Bank";
 import Branch from "./models/Branch";
 import Company from "./models/Company";
 import CompanySettings from "./models/CompanySettings";
@@ -76,6 +79,7 @@ export {
   Account,
   AccountConfig,
   AccountType,
+  Bank,
   Branch,
   Company,
   CompanySettings,

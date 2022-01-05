@@ -4,6 +4,7 @@ import {
   AccountConfigData,
   AccountData,
   AccountTypeData,
+  BankData,
   BranchData,
   CompanyData,
   CompanySettingsData,
@@ -170,13 +171,19 @@ declare module "@planetadeleste/vue-mc-gw" {
   class InvoiceMovementTypeCollection extends Collection<InvoiceMovementType> {
     list(): Promise<Response<InvoiceMovementTypeData[]>>;
   }
-
+  
   interface PriceList extends Model, PriceListData {}
   class PriceList extends Model {
     getOffers(): Promise<Response<OfferData[]>>;
   }
   class PriceListCollection extends Collection<PriceList> {
     list(): Promise<Response<PriceListData[]>>;
+  }
+  
+  interface Bank extends Model, BankData {}
+  class Bank extends Model {}
+  class BankCollection extends Collection<Bank> {
+    list(): Promise<Response<BankData[]>>;
   }
 
   export {
@@ -189,6 +196,9 @@ declare module "@planetadeleste/vue-mc-gw" {
     AccountType,
     AccountTypeCollection,
     AccountTypeData,
+    Bank,
+    BankCollection,
+    BankData,
     Branch,
     BranchCollection,
     BranchData,
