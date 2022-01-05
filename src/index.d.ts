@@ -7,6 +7,7 @@ import {
   BankData,
   BranchData,
   CompanyData,
+  CompanyPaymentMethodRequest,
   CompanySettingsData,
   CurrencyRateData,
   CustomerData,
@@ -42,7 +43,15 @@ declare module "@planetadeleste/vue-mc-gw" {
   }
 
   interface Company extends Model, CompanyData {}
-  class Company extends Model {}
+  class Company extends Model {
+    getPaymentMethods(): Promise<Response<PaymentMethodData[]>>;
+    addUpdatePaymentMethods(
+      obConfigData: CompanyPaymentMethodRequest
+    ): Promise<Response<PaymentMethodData[]>>;
+    delPaymentMethods(
+      obConfigData: CompanyPaymentMethodRequest
+    ): Promise<Response<PaymentMethodData[]>>;
+  }
   class CompanyCollection extends Collection<Company> {
     byActive<T extends CompanyCollection>(this: T): T;
     bySearch<T extends CompanyCollection>(this: T, sValue: string): T;
@@ -171,7 +180,7 @@ declare module "@planetadeleste/vue-mc-gw" {
   class InvoiceMovementTypeCollection extends Collection<InvoiceMovementType> {
     list(): Promise<Response<InvoiceMovementTypeData[]>>;
   }
-  
+
   interface PriceList extends Model, PriceListData {}
   class PriceList extends Model {
     getOffers(): Promise<Response<OfferData[]>>;
@@ -179,7 +188,7 @@ declare module "@planetadeleste/vue-mc-gw" {
   class PriceListCollection extends Collection<PriceList> {
     list(): Promise<Response<PriceListData[]>>;
   }
-  
+
   interface Bank extends Model, BankData {}
   class Bank extends Model {}
   class BankCollection extends Collection<Bank> {
@@ -205,6 +214,7 @@ declare module "@planetadeleste/vue-mc-gw" {
     Company,
     CompanyCollection,
     CompanyData,
+    CompanyPaymentMethodRequest,
     CompanySettings,
     CompanySettingsCollection,
     CompanySettingsData,
