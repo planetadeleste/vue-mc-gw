@@ -17,6 +17,7 @@ import {
   InvoiceData,
   InvoiceGroupData,
   InvoiceMovementTypeData,
+  InvoicePaymentMethodData,
   InvoicePositionData,
   InvoiceTypeData,
   PaymentMethodData,
@@ -181,6 +182,16 @@ declare module "@planetadeleste/vue-mc-gw" {
     list(): Promise<Response<InvoiceMovementTypeData[]>>;
   }
 
+  interface InvoicePaymentMethod extends Model, InvoicePaymentMethodData {}
+  class InvoicePaymentMethod extends Model {}
+  class InvoicePaymentMethodCollection extends Collection<InvoicePaymentMethod> {
+    list(): Promise<Response<InvoicePaymentMethodData[]>>;
+    byInvoice<T extends InvoicePaymentMethodCollection>(
+      this: T,
+      iInvoiceId: number
+    ): T;
+  }
+
   interface PriceList extends Model, PriceListData {}
   class PriceList extends Model {
     getOffers(): Promise<Response<OfferData[]>>;
@@ -240,6 +251,9 @@ declare module "@planetadeleste/vue-mc-gw" {
     InvoiceMovementType,
     InvoiceMovementTypeCollection,
     InvoiceMovementTypeData,
+    InvoicePaymentMethod,
+    InvoicePaymentMethodCollection,
+    InvoicePaymentMethodData,
     InvoicePosition,
     InvoicePositionCollection,
     InvoicePositionData,

@@ -12,6 +12,7 @@ export * from "./Firm";
 export * from "./Invoice";
 export * from "./InvoiceGroup";
 export * from "./InvoiceMovementType";
+export * from "./InvoicePaymentMethod";
 export * from "./InvoicePosition";
 export * from "./InvoiceType";
 export * from "./PaymentMethod";
