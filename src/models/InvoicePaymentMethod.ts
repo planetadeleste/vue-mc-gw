@@ -7,7 +7,10 @@ export default class InvoicePaymentMethod extends Model {
       id: null,
       invoice_id: null,
       payment_method_id: null,
-      amount: null,
+      currency_id: null,
+      amount: 0,
+      rate: 0,
+      config: {},
       sort_order: null,
     };
   }
