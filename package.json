@@ -1,6 +1,6 @@
 {
   "name": "@planetadeleste/vue-mc-gw",
-  "version": "1.0.54",
+  "version": "1.0.55",
   "description": "Models and Controllers for GestionWeb project",
   "main": "dist/vue-mc-gw.js",
   "module": "dist/vue-mc-gw.es.js",
@@ -38,9 +38,6 @@
     "lint": "eslint --fix 'src/**/*.ts'",
     "build": "rollup -c"
   },
-  "dependencies": {
-    "@planetadeleste/vue-mc": "^1.0.77"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/planetadeleste/vue-mc-gw.git"
@@ -62,6 +59,7 @@
     "gw"
   ],
   "peerDependencies": {
+    "@planetadeleste/vue-mc": "^1.0.77",
     "@planetadeleste/vue-mc-shopaholic": "^1.1.23"
   }
 }
