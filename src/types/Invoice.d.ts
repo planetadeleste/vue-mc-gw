@@ -45,6 +45,7 @@ export interface InvoiceData {
   currency: CurrencyData;
   price_list: PriceListData;
   positions: InvoicePositionData[];
+  discounts: DiscountData[];
 
   is_signed: boolean;
   position_total_price_value: number;

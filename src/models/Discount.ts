@@ -8,6 +8,8 @@ export default class Discount extends Model {
       id: null,
       name: null,
       value: null,
+      priority: null,
+      increase: false,
       description: null,
     };
   }
