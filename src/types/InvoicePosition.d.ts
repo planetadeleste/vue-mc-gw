@@ -8,7 +8,7 @@ export interface InvoicePositionData {
   tax_type_id: number;
   price: number;
   original_price: number;
-  price_without_discounts: number;
+  price_with_discounts: number;
   discounts: number[];
   quantity: number;
   quote: number;
