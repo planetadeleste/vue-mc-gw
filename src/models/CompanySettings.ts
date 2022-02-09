@@ -8,6 +8,7 @@ export default class CompanySettings extends Model {
       id: null,
       company_id: null,
       max_global_discounts: null,
+      max_inline_discounts: null,
       discounts_per_line: null,
       print_after_billing: null,
       print_payment_conditions: null,

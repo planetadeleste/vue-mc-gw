@@ -2,6 +2,7 @@ export interface CompanySettingsData {
   id: number;
   company_id: number;
   max_global_discounts: number;
+  max_inline_discounts: number;
   discounts_per_line: boolean;
   print_after_billing: boolean;
   print_payment_conditions: boolean;
