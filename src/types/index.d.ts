@@ -14,6 +14,7 @@ export * from "./InvoiceGroup";
 export * from "./InvoiceMovementType";
 export * from "./InvoicePaymentMethod";
 export * from "./InvoicePosition";
+export * from "./InvoiceReference";
 export * from "./InvoiceType";
 export * from "./PaymentMethod";
 export * from "./PaymentTerm";

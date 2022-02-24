@@ -1,5 +1,5 @@
 /**
- * Models and Collections for VueMcGw plugin
+ * Models and Collections for PlanetaDelEsteGw plugin
  *
  * @author Alvaro Canepa <bfpdevel@gmail.com>
  */
@@ -21,6 +21,7 @@ import InvoiceGroupCollection from "./collections/InvoiceGroupCollection";
 import InvoiceMovementTypeCollection from "./collections/InvoiceMovementTypeCollection";
 import InvoicePaymentMethodCollection from "./collections/InvoicePaymentMethodCollection";
 import InvoicePositionCollection from "./collections/InvoicePositionCollection";
+import InvoiceReferenceCollection from "./collections/InvoiceReferenceCollection";
 import InvoiceTypeCollection from "./collections/InvoiceTypeCollection";
 import PaymentMethodCollection from "./collections/PaymentMethodCollection";
 import PaymentTerms from "./collections/PaymentTerms";
@@ -45,6 +46,7 @@ export {
   InvoiceMovementTypeCollection,
   InvoicePaymentMethodCollection,
   InvoicePositionCollection,
+  InvoiceReferenceCollection,
   InvoiceTypeCollection,
   PaymentMethodCollection,
   PaymentTerms,
@@ -70,6 +72,7 @@ import InvoiceGroup from "./models/InvoiceGroup";
 import InvoiceMovementType from "./models/InvoiceMovementType";
 import InvoicePaymentMethod from "./models/InvoicePaymentMethod";
 import InvoicePosition from "./models/InvoicePosition";
+import InvoiceReference from "./models/InvoiceReference";
 import InvoiceType from "./models/InvoiceType";
 import PaymentMethod from "./models/PaymentMethod";
 import PaymentTerm from "./models/PaymentTerm";
@@ -95,6 +98,7 @@ export {
   InvoiceMovementType,
   InvoicePaymentMethod,
   InvoicePosition,
+  InvoiceReference,
   InvoiceType,
   PaymentMethod,
   PaymentTerm,

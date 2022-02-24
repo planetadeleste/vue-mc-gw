@@ -19,6 +19,7 @@ import {
   InvoiceMovementTypeData,
   InvoicePaymentMethodData,
   InvoicePositionData,
+  InvoiceReferenceData,
   InvoiceTypeData,
   PaymentMethodData,
   PaymentTermData,
@@ -192,6 +193,16 @@ declare module "@planetadeleste/vue-mc-gw" {
     ): T;
   }
 
+  interface InvoiceReference extends Model, InvoiceReferenceData {}
+  class InvoiceReference extends Model {}
+  class InvoiceReferenceCollection extends Collection<InvoiceReference> {
+    list(): Promise<Response<InvoiceReference[]>>;
+    byInvoice<T extends InvoiceReferenceCollection>(
+      this: T,
+      iInvoiceId: number
+    ): T;
+  }
+
   interface PriceList extends Model, PriceListData {}
   class PriceList extends Model {
     getOffers(): Promise<Response<OfferData[]>>;
@@ -257,6 +268,9 @@ declare module "@planetadeleste/vue-mc-gw" {
     InvoicePosition,
     InvoicePositionCollection,
     InvoicePositionData,
+    InvoiceReference,
+    InvoiceReferenceCollection,
+    InvoiceReferenceData,
     InvoiceType,
     InvoiceTypeCollection,
     InvoiceTypeData,

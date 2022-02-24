@@ -3,6 +3,7 @@ import { BranchData } from "./Branch";
 import { CompanyData } from "./Company";
 import { CustomerData } from "./Customer";
 import { InvoicePositionData } from "./InvoicePosition";
+import { InvoiceReferenceData } from "./InvoiceReference";
 import { InvoiceTypeData } from "./InvoiceType";
 import { PaymentTermData } from "./PaymentTerm";
 import { PriceListData } from "./PriceList";
@@ -45,7 +46,8 @@ export interface InvoiceData {
   currency: CurrencyData;
   price_list: PriceListData;
   positions: InvoicePositionData[];
-  discounts: DiscountData[];
+  discounts?: DiscountData[];
+  references?: InvoiceReferenceData[];
 
   is_signed: boolean;
   position_total_price_value: number;
