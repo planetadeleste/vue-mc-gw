@@ -23,3 +23,8 @@ export interface CompanyData {
   firm: FirmData;
   settings: CompanySettingsData;
 }
+
+export interface CompanyBalance {
+  balance: number;
+  unsigned_balance: number;
+}

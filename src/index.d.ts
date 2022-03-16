@@ -6,6 +6,7 @@ import {
   AccountTypeData,
   BankData,
   BranchData,
+  CompanyBalance,
   CompanyData,
   CompanyPaymentMethodRequest,
   CompanySettingsData,
@@ -46,6 +47,7 @@ declare module "@planetadeleste/vue-mc-gw" {
 
   interface Company extends Model, CompanyData {}
   class Company extends Model {
+    getBalance(): Promise<Response<CompanyBalance>>;
     getPaymentMethods(): Promise<Response<PaymentMethodData[]>>;
     addUpdatePaymentMethods(
       obConfigData: CompanyPaymentMethodRequest
@@ -234,6 +236,7 @@ declare module "@planetadeleste/vue-mc-gw" {
     BranchCollection,
     BranchData,
     Company,
+    CompanyBalance,
     CompanyCollection,
     CompanyData,
     CompanyPaymentMethodRequest,

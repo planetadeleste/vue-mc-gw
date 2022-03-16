@@ -1,4 +1,4 @@
-import { CompanyPaymentMethodRequest } from "@/types/Company";
+import { CompanyBalance, CompanyPaymentMethodRequest } from "@/types/Company";
 import { Model } from "@planetadeleste/vue-mc";
 import { toNumber } from "lodash";
 import { Response } from "vue-mc";
@@ -37,17 +37,23 @@ export default class Company extends Model {
       fetchPaymentMethods: "companies.payment_methods.list",
       storePaymentMethods: "companies.payment_methods.store",
       destroyPaymentMethods: "companies.payment_methods.destroy",
+      fetchBalance: "companies.balance",
     };
   }
 
   options(): Record<string, any> {
     return {
       methods: {
+        fetchBalance: "GET",
         fetchPaymentMethods: "GET",
         storePaymentMethods: "POST",
         destroyPaymentMethods: "DELETE",
       },
     };
+  }
+
+  async getBalance(): Promise<Response<CompanyBalance>> {
+    return await this.createCustomRequest("fetchBalance", ["id"]);
   }
 
   async getPaymentMethods(): Promise<Response<PaymentMethodData[]>> {
