@@ -24,7 +24,9 @@ export interface CompanyData {
   settings: CompanySettingsData;
 }
 
-export interface CompanyBalance {
-  balance: number;
-  unsigned_balance: number;
+export interface CompanyBalanceData {
+  UYU: number;
+  USD: number;
+  UN_UYU: number;
+  UN_USD: number;
 }

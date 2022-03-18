@@ -1,4 +1,7 @@
-import { CompanyBalance, CompanyPaymentMethodRequest } from "@/types/Company";
+import {
+  CompanyBalanceData,
+  CompanyPaymentMethodRequest,
+} from "@/types/Company";
 import { Model } from "@planetadeleste/vue-mc";
 import { toNumber } from "lodash";
 import { Response } from "vue-mc";
@@ -52,7 +55,7 @@ export default class Company extends Model {
     };
   }
 
-  async getBalance(): Promise<Response<CompanyBalance>> {
+  async getBalance(): Promise<Response<CompanyBalanceData>> {
     return await this.createCustomRequest("fetchBalance", ["id"]);
   }
 
