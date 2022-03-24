@@ -28,6 +28,8 @@ import {
   PaymentTermType,
   PriceListData,
   ProductGwData,
+  ReleaseData,
+  ReleaseType,
   SettingsData,
   TaxTypeData,
 } from "./types";
@@ -219,6 +221,14 @@ declare module "@planetadeleste/vue-mc-gw" {
     list(): Promise<Response<BankData[]>>;
   }
 
+  interface Release extends Model, ReleaseData {}
+  class Release extends Model {}
+  class ReleaseCollection extends Collection<Release> {
+    list(): Promise<Response<ReleaseData[]>>;
+    listByType(sType: string): Promise<Response<ReleaseData[]>>;
+    byType<T extends ReleaseCollection>(this: T, sType: string): T;
+  }
+
   export {
     Account,
     AccountCollection,
@@ -290,6 +300,10 @@ declare module "@planetadeleste/vue-mc-gw" {
     ProductGw,
     ProductGwCollection,
     ProductGwData,
+    Release,
+    ReleaseCollection,
+    ReleaseData,
+    ReleaseType,
     Settings,
     SettingsData,
     TaxType,

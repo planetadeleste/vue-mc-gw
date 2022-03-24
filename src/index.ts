@@ -1,5 +1,5 @@
 /**
- * Models and Collections for PlanetaDelEsteGw plugin
+ * Models and Collections for @planetadeleste/vue-mc-gw plugin
  *
  * @author Alvaro Canepa <bfpdevel@gmail.com>
  */
@@ -27,6 +27,7 @@ import PaymentMethodCollection from "./collections/PaymentMethodCollection";
 import PaymentTerms from "./collections/PaymentTerms";
 import PriceListCollection from "./collections/PriceListCollection";
 import ProductGwCollection from "./collections/ProductGwCollection";
+import ReleaseCollection from "./collections/ReleaseCollection";
 import TaxTypeCollection from "./collections/TaxTypeCollection";
 
 export {
@@ -52,6 +53,7 @@ export {
   PaymentTerms,
   PriceListCollection,
   ProductGwCollection,
+  ReleaseCollection,
   TaxTypeCollection,
 };
 
@@ -78,6 +80,7 @@ import PaymentMethod from "./models/PaymentMethod";
 import PaymentTerm from "./models/PaymentTerm";
 import PriceList from "./models/PriceList";
 import ProductGw from "./models/ProductGw";
+import Release from "./models/Release";
 import Settings from "./models/Settings";
 import TaxType from "./models/TaxType";
 
@@ -104,6 +107,7 @@ export {
   PaymentTerm,
   PriceList,
   ProductGw,
+  Release,
   Settings,
   TaxType,
 };

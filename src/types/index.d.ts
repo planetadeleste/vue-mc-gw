@@ -20,5 +20,6 @@ export * from "./PaymentMethod";
 export * from "./PaymentTerm";
 export * from "./PriceList";
 export * from "./ProductGw";
+export * from "./Release";
 export * from "./Settings";
 export * from "./TaxType";
