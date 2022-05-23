@@ -11,6 +11,7 @@ export interface FirmData {
   description: string;
   doc_id: string;
   doc_type: string;
+  doc_formatted: string;
 
   address: string;
   email: string;
