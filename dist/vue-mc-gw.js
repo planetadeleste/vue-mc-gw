@@ -2,7 +2,7 @@
   /**
    * @license
    * author: Alvaro Canepa
-   * vue-mc-gw.js v1.0.63
+   * vue-mc-gw.js v1.0.64
    * Released under the MIT license.
    */
 

@@ -1,5 +1,5 @@
 import "@planetadeleste/vue-mc";
-import { CurrencyData, OfferData } from "@planetadeleste/vue-mc-shopaholic";
+import { CurrencyData } from "@planetadeleste/vue-mc-shopaholic";
 import {
   AccountConfigData,
   AccountData,
@@ -22,6 +22,7 @@ import {
   InvoicePositionData,
   InvoiceReferenceData,
   InvoiceTypeData,
+  OfferData,
   PaymentMethodData,
   PaymentTermData,
   PaymentTermFrequency,
@@ -287,6 +288,7 @@ declare module "@planetadeleste/vue-mc-gw" {
     InvoiceType,
     InvoiceTypeCollection,
     InvoiceTypeData,
+    OfferData,
     PaymentMethod,
     PaymentMethodCollection,
     PaymentMethodData,
