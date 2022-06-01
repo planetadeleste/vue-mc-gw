@@ -6,6 +6,12 @@ export interface OfferData extends ProductOfferData {
   currency_id: number;
   external_id: number;
   has_prices: boolean;
+  use_price_with_tax: boolean;
+  tax_value: number;
+  price_with_tax: number;
+  price_with_tax_value: number;
+  price_without_tax: number;
+  price_without_tax_value: number;
   height: number;
   length: number;
   measure_id: number;
