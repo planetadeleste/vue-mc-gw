@@ -11,6 +11,7 @@ export default class PriceList extends Model {
       name: null,
       code: null,
       active: true,
+      is_default: true,
     };
   }
 
