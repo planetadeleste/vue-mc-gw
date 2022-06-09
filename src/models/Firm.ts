@@ -13,9 +13,13 @@ export default class Firm extends Model {
       doc_type: null,
 
       address: null,
+      address2: null,
       email: null,
       phone: null,
       mobile: null,
+      state_text: null,
+      town_text: null,
+      cp: null,
 
       // Location data
       country_id: null,
