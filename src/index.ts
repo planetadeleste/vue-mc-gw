@@ -14,6 +14,7 @@ import CompanyCollection from "./collections/CompanyCollection";
 import CompanySettingsCollection from "./collections/CompanySettingsCollection";
 import CurrencyRates from "./collections/CurrencyRates";
 import CustomerCollection from "./collections/CustomerCollection";
+import CustomerConfigCollection from "./collections/CustomerConfigCollection";
 import DiscountCollection from "./collections/DiscountCollection";
 import FirmCollection from "./collections/FirmCollection";
 import InvoiceCollection from "./collections/InvoiceCollection";
@@ -40,6 +41,7 @@ export {
   CompanySettingsCollection,
   CurrencyRates,
   CustomerCollection,
+  CustomerConfigCollection,
   DiscountCollection,
   FirmCollection,
   InvoiceCollection,
@@ -67,6 +69,7 @@ import Company from "./models/Company";
 import CompanySettings from "./models/CompanySettings";
 import CurrencyRate from "./models/CurrencyRate";
 import Customer from "./models/Customer";
+import CustomerConfig from "./models/CustomerConfig";
 import Discount from "./models/Discount";
 import Firm from "./models/Firm";
 import Invoice from "./models/Invoice";
@@ -94,6 +97,7 @@ export {
   CompanySettings,
   CurrencyRate,
   Customer,
+  CustomerConfig,
   Discount,
   Firm,
   Invoice,

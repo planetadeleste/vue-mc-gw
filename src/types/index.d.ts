@@ -7,6 +7,7 @@ export * from "./Company";
 export * from "./CompanySettings";
 export * from "./CurrencyRate";
 export * from "./Customer";
+export * from "./CustomerConfig";
 export * from "./Discount";
 export * from "./Firm";
 export * from "./Invoice";

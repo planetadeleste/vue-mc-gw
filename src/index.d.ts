@@ -11,6 +11,7 @@ import {
   CompanyPaymentMethodRequest,
   CompanySettingsData,
   CurrencyRateData,
+  CustomerConfigData,
   CustomerData,
   CustomerType,
   DiscountData,
@@ -95,6 +96,10 @@ declare module "@planetadeleste/vue-mc-gw" {
     bySearch<T extends CustomerCollection>(this: T, sValue: string): T;
     list(): Promise<Response<CustomerData[]>>;
   }
+
+  interface CustomerConfig extends Model, CustomerConfigData {}
+  class CustomerConfig extends Model {}
+  class CustomerConfigCollection extends Collection<CustomerConfig> {}
 
   interface CurrencyRate extends Model, CurrencyRateData {}
   class CurrencyRate extends Model {}
@@ -259,6 +264,9 @@ declare module "@planetadeleste/vue-mc-gw" {
     CurrencyRates,
     Customer,
     CustomerCollection,
+    CustomerConfig,
+    CustomerConfigCollection,
+    CustomerConfigData,
     CustomerData,
     CustomerType,
     Discount,

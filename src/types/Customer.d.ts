@@ -3,6 +3,7 @@ import { CompanyData } from "./Company";
 import { CurrencyData } from "@planetadeleste/vue-mc-shopaholic";
 import { PaymentTermData } from "./PaymentTerm";
 import { DiscountData } from "./Discount";
+import { CustomerConfigData } from "./CustomerConfig";
 
 /**
  * 1 - Customer only
@@ -30,4 +31,5 @@ export interface CustomerData {
   currencies: CurrencyData[];
   paymentterms: PaymentTermData[];
   discounts: DiscountData[];
+  config: CustomerConfigData;
 }
