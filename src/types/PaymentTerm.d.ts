@@ -5,6 +5,7 @@ export interface PaymentTermData {
   id: number;
   active: bool;
   cash: bool;
+  can_modify_date: bool;
   name: string;
   code: string;
   type: PaymentTermType;

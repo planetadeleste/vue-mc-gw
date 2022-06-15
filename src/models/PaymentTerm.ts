@@ -7,6 +7,7 @@ export default class PaymentTerm extends Model {
       id: null,
       active: false,
       cash: false,
+      can_modify_date: false,
       name: null,
       code: null,
       type: "fixed",
