@@ -1,5 +1,5 @@
-import "@planetadeleste/vue-mc";
-import { CurrencyData } from "@planetadeleste/vue-mc-shopaholic";
+import '@planetadeleste/vue-mc';
+import { CurrencyData } from '@planetadeleste/vue-mc-shopaholic';
 import {
   AccountConfigData,
   AccountData,
@@ -34,11 +34,12 @@ import {
   ReleaseType,
   SettingsData,
   TaxTypeData,
-} from "./types";
+  UcfeData,
+} from './types';
 
-declare module "@planetadeleste/vue-mc-gw" {
-  import { Model, Collection } from "@planetadeleste/vue-mc";
-  import { Response } from "vue-mc";
+declare module '@planetadeleste/vue-mc-gw' {
+  import { Model, Collection } from '@planetadeleste/vue-mc';
+  import { Response } from 'vue-mc';
 
   interface Branch extends Model, BranchData {}
   class Branch extends Model {}
@@ -319,5 +320,6 @@ declare module "@planetadeleste/vue-mc-gw" {
     TaxType,
     TaxTypeCollection,
     TaxTypeData,
+    UcfeData,
   };
 }

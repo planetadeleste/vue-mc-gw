@@ -1,5 +1,6 @@
-import { CompanyData } from "./Company";
-import { FirmData } from "./Firm";
+import { UcfeData } from './Ucfe.d';
+import { CompanyData } from './Company';
+import { FirmData } from './Firm';
 
 export interface BranchData {
   id: number;
@@ -10,4 +11,5 @@ export interface BranchData {
   updated_at: string;
   company: CompanyData;
   firm: FirmData;
+  ucfe: UcfeData;
 }

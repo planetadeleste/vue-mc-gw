@@ -1,6 +1,7 @@
-import { BranchData } from "./Branch";
-import { CompanySettingsData } from "./CompanySettings";
-import { FirmData } from "./Firm";
+import { UcfeData } from './Ucfe.d';
+import { BranchData } from './Branch';
+import { CompanySettingsData } from './CompanySettings';
+import { FirmData } from './Firm';
 
 export interface CompanyPaymentMethodRequest {
   id?: number;
@@ -21,6 +22,7 @@ export interface CompanyData {
   ucfe_password: string;
   branches: BranchData[];
   firm: FirmData;
+  ucfe: UcfeData;
   settings: CompanySettingsData;
 }
 
