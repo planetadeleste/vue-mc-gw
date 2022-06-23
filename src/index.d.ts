@@ -6,6 +6,7 @@ import {
   AccountTypeData,
   BankData,
   BranchData,
+  CfeCodeData,
   CompanyBalanceData,
   CompanyData,
   CompanyPaymentMethodRequest,
@@ -236,6 +237,12 @@ declare module '@planetadeleste/vue-mc-gw' {
     byType<T extends ReleaseCollection>(this: T, sType: string): T;
   }
 
+  interface CfeCode extends Model, CfeCodeData {}
+  class CfeCode extends Model {}
+  class CfeCodeCollection extends Collection<CfeCode> {
+    list(): Promise<Response<CfeCodeData[]>>;
+  }
+
   export {
     Account,
     AccountCollection,
@@ -252,6 +259,9 @@ declare module '@planetadeleste/vue-mc-gw' {
     Branch,
     BranchCollection,
     BranchData,
+    CfeCode,
+    CfeCodeCollection,
+    CfeCodeData,
     Company,
     CompanyBalanceData,
     CompanyCollection,
