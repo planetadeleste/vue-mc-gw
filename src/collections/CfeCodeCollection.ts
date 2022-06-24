@@ -11,6 +11,7 @@ export default class CfeCodeCollection extends Collection<CfeCode> {
   routes(): Record<string, any> {
     return {
       fetch: 'cfecodes.index',
+      list: 'cfecodes.list',
     };
   }
 
