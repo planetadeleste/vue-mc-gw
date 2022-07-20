@@ -11,6 +11,7 @@ export interface InvoicePositionData {
   original_price: number;
   price_with_discounts: number;
   quantity: number;
+  indicator: number;
   quote: number;
   item_id: number;
   item_type: string;
