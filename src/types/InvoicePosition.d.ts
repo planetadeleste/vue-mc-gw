@@ -22,4 +22,5 @@ export interface InvoicePositionData {
   discounts: DiscountData[];
   created_at: string;
   updated_at: string;
+  ref_id: number;
 }

@@ -8,13 +8,14 @@ export default class InvoicePosition extends Model {
       invoice_id: null,
       currency_id: null,
       tax_type_id: null,
+      item_type: null,
+      item_id: null,
       price: null,
       quantity: null,
-      indicator: null,
       quote: null,
-      item_id: null,
-      item_type: null,
       tax_percent: null,
+      ref_id: null,
+      indicator: null,
     };
   }
 
