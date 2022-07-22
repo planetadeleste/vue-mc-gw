@@ -1,3 +1,4 @@
+import { CfeCodeData } from './CfeCode.d';
 import { CurrencyData, OfferData } from "@planetadeleste/vue-mc-shopaholic";
 import { DiscountData } from "./Discount";
 import { TaxTypeData } from "./TaxType";
@@ -23,4 +24,11 @@ export interface InvoicePositionData {
   created_at: string;
   updated_at: string;
   ref_id: number;
+  cfe_code: CfeCodeData;
+  unit_price: number;
+  quantity_balance: number;
+  price_balance: number;
+  price_with_discounts: number;
+  total_with_tax: number;
+  total_tax: number;
 }
