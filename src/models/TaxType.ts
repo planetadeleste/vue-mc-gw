@@ -1,11 +1,12 @@
-import { Model } from "@planetadeleste/vue-mc";
-import { toNumber } from "lodash";
+import { Model } from '@planetadeleste/vue-mc';
+import { toNumber } from 'lodash';
 
 export default class TaxType extends Model {
   defaults(): Record<string, any> {
     return {
       id: null,
       name: null,
+      short_name: null,
       code: null,
       description: null,
       percent: null,
@@ -27,10 +28,10 @@ export default class TaxType extends Model {
 
   routes(): Record<string, any> {
     return {
-      fetch: "taxtypes.show",
-      create: "taxtypes.store",
-      update: "taxtypes.update",
-      delete: "taxtypes.destroy",
+      fetch: 'taxtypes.show',
+      create: 'taxtypes.store',
+      update: 'taxtypes.update',
+      delete: 'taxtypes.destroy',
     };
   }
 }
