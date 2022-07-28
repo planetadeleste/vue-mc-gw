@@ -2,6 +2,11 @@ import { Model } from '@planetadeleste/vue-mc';
 import { toNumber } from 'lodash';
 
 export default class TaxType extends Model {
+  static readonly CODE_EXEMPT = 1;
+  static readonly CODE_MIN = 2;
+  static readonly CODE_BASIC = 3;
+  static readonly CODE_OTHER = 4;
+
   defaults(): Record<string, any> {
     return {
       id: null,
